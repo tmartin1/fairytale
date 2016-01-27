@@ -7,7 +7,7 @@
     function eventsController () {
         var vm = this;
 
-        this.title =  'events';
+        vm.title =  'events';
     }
 
 })();

@@ -1,0 +1,11 @@
+<h1>{{ vm.title }}</h1>
+
+<!-- Color block samples -->
+<div data-ng-repeat="(color, hues) in vm.colors" class="color-demo-box">
+    <h3>{{ color }}</h3>
+    <div data-ng-repeat="(name, hue) in hues"
+        class="hue-demo-box" data-ng-class="{ 'light-text': name.match('dark') }"
+        style="background-color: {{ hue }};">
+        {{ name }}
+    </div>
+</div>

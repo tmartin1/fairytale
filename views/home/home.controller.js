@@ -7,7 +7,7 @@
     function homeController () {
         var vm = this;
 
-        this.title =  'Home';
+        vm.title =  'Home';
     }
 
 })();
