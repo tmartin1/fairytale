@@ -1,14 +1,14 @@
-angular
-    .module('app', [
+angular.module('app', [
         'ngAnimate',
         'ui.router',
         'ui.bootstrap',
+        'moment',
         'homeController'
     ])
     .config(routerConfig);
 
 function routerConfig ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
         .state('home', {
