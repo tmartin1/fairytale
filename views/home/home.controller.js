@@ -1,8 +1,13 @@
-angular.module('app.home', [])
-    .controller('homeController', homeController);
+(function () {
+    'use strict';
 
-function homeController () {
-    var vm = this;
+    angular.module('fairytale.home', [])
+        .controller('homeController', homeController);
 
-    this.title =  'Home';
-}
+    function homeController () {
+        var vm = this;
+
+        this.title =  'Home';
+    }
+
+})();

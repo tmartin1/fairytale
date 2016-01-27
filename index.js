@@ -1,20 +1,31 @@
-angular.module('app', [
-        'ngAnimate',
-        'ui.router',
-        'ui.bootstrap',
-        'moment',
-        'homeController'
-    ])
-    .config(routerConfig);
+(function () {
+    'use strict';
 
-function routerConfig ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home');
+    angular.module('fairytale', [
+            'ngAnimate',
+            'ui.router',
+            'ui.bootstrap',
+            'fairytale.home',
+            'fairytale.events'
+        ])
+        .config(routerConfig);
 
-    $stateProvider
-        .state('home', {
-            url: '/',
-            templateUrl: './views/home/home.html',
-            controller: 'homeController',
-            controllerAs: 'vm'
-        });
-}
+    function routerConfig ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise('home');
+
+        $stateProvider
+            .state('home', {
+                url: '/home',
+                templateUrl: './views/home/home.html',
+                controller: 'homeController',
+                controllerAs: 'vm'
+            })
+            .state('events', {
+                url: '/events',
+                templateUrl: './views/events/events.html',
+                controller: 'eventsController',
+                controllerAs: 'vm'
+            });
+    }
+
+})();
