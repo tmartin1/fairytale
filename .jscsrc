@@ -1,0 +1,21 @@
+{
+    "preset": "yandex",
+    "maximumLineLength": 100,
+    "disallowSpacesInFunctionDeclaration": null,
+    "disallowSpacesInNamedFunctionExpression": null,
+    "disallowSpacesInsideObjectBrackets": null,
+    "disallowMultipleLineBreaks": true,
+    "excludeFiles": [
+        "node_modules/**",
+        "assets/js/vendor/**",
+        "public/js/**"
+    ],
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    }
+}

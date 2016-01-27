@@ -1,0 +1,26 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "esnext": true,
+    "eqeqeq": true,
+    "esnext": true,
+    "freeze": true,
+    "jasmine": true,
+    "latedef": false,
+    "noarg": true,
+    "node": true,
+    "undef": true,
+    "unused": true,
+    "validthis": true,
+    "globals": {
+        "angular": false,
+        "console": false,
+        "document": false,
+        "ga": false,
+        "inject": false,
+        "module": false,
+        "moment": false,
+        "setTimeout": false,
+        "window": false
+    }
+}
