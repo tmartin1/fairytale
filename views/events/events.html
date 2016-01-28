@@ -1,7 +1,7 @@
-<center class="page-content">
+<center class="page-content row">
     <h1 class="content-header">Events</h1>
 
-    <div class="col-md-5 col-md-offset-1">
+    <div class="col-md-12 col-lg-6">
         <div data-ng-repeat="event in vm.events" class="wedding-event">
             <h2>{{ event.title }}</h2>
             <p>{{ event.time }} {{ event.date }}</p>
@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="col-md-5">
+    <div class="col-md-12 col-lg-6 google-maps-block">
         <iframe src="https://mapsengine.google.com/map/embed?mid=zS-bmhXF4Uzc.kztJTTNGdiAc" width="640" height="480"></iframe>
     </div>
 

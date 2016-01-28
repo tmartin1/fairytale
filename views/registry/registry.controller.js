@@ -6,8 +6,6 @@
 
     function registryController () {
         var vm = this;
-
-        vm.title =  'registry';
     }
 
 })();

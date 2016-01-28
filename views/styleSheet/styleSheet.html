@@ -1,11 +1,17 @@
-<h1>{{ vm.title }}</h1>
+<div class="style-sheet">
 
-<!-- Color block samples -->
-<div data-ng-repeat="(color, hues) in vm.colors" class="color-demo-box">
-    <h3>{{ color }}</h3>
-    <div data-ng-repeat="(name, hue) in hues"
-        class="hue-demo-box" data-ng-class="{ 'light-text': name.match('dark') }"
-        style="background-color: {{ hue }};">
-        {{ name }}
+    <div class="content-header">
+        <h1>Style Sheet</h1>
     </div>
+
+    <!-- Color samples -->
+    <div data-ng-repeat="(color, hues) in vm.colors" class="color-demo-box">
+        <h3>{{ color }}</h3>
+        <div data-ng-repeat="(name, hue) in hues"
+            class="hue-demo-box" data-ng-class="{ 'light-text': name.match('dark') }"
+            style="background-color: {{ hue }};">
+            {{ name }}
+        </div>
+    </div>
+
 </div>

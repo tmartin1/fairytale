@@ -27,7 +27,11 @@
     <body data-ng-cloak>
         <div data-ng-include="'./components/navbar.html'"></div>
 
-        <div class="col-lg-10 col-lg-offset-1 col-md-12 main-content" data-ui-view></div>
+        <div class="col-lg-10 col-lg-offset-1 col-md-12 main-content">
+            <center class="page-content">
+                <div data-ui-view></div>
+            </center>
+        </div>
 
         <!-- Resources -->
         <script type="text/javascript" src="./vendor/js/jquery.min.js"></script>

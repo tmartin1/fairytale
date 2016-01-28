@@ -7,7 +7,17 @@
     function weddingPartyController () {
         var vm = this;
 
-        vm.title =  'weddingParty';
+        vm.bridesmaids = [{
+            name: '',
+            pic: '',
+            bio: ''
+        }];
+
+        vm.groomsmen = [{
+            name: '',
+            pic: '',
+            bio: ''
+        }];
     }
 
 })();

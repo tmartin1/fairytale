@@ -6,3 +6,21 @@
 .wedding-event p {
     font-size: 1.3em;
 }
+
+.google-maps-block {
+    min-width: 640px;
+}
+
+/* Same px width trigger as col-sm */
+@media (min-width: 768px) {
+    .wedding-event {
+        text-align: center;
+    }
+}
+
+/* At 990px google maps block doesn't fit with the events block. */
+@media (min-width: 990px) {
+    .wedding-event {
+        text-align: center;
+    }
+}

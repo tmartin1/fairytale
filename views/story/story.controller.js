@@ -6,8 +6,6 @@
 
     function storyController () {
         var vm = this;
-
-        vm.title =  'story';
     }
 
 })();

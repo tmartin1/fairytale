@@ -7,8 +7,6 @@
     function styleSheetController () {
         var vm = this;
 
-        vm.title =  'styleSheet';
-
         vm.colors = {
             purples: {
                 ultralight: '#f9f7fc',

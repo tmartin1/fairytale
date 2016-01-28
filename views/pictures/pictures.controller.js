@@ -7,7 +7,12 @@
     function picturesController () {
         var vm = this;
 
-        vm.title =  'pictures';
+        vm.engagement = [{
+            title: 'Pic',
+            ref: '...'
+        }];
+
+        vm.wedding;
     }
 
 })();

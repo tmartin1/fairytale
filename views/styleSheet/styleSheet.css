@@ -26,6 +26,11 @@ Greys:
     ultradark: #
 */
 
+
+.style-sheet {
+    /*background-color: white;*/
+}
+
 .color-demo-box {
     border: solid white 50px;
     margin: 0 auto;
