@@ -9,6 +9,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
 .light-text {
     color: white;
 }

@@ -1,1 +1,10 @@
-<h1>{{ vm.title }}</h1>
+<center class="page-content">
+    <h1>Events</h1>
+
+    <div data-ng-repeat="event in vm.events" class="wedding-event">
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.time }} {{ event.date }}</p>
+        <p>{{ event.address.street }}</p>
+        <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip }}</p>
+    </div>
+</center>
