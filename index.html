@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./components/navbar.css">
         <link rel="stylesheet" href="./views/home/home.css">
         <link rel="stylesheet" href="./views/events/events.css">
         <link rel="stylesheet" href="./views/pictures/pictures.css">
@@ -20,7 +21,11 @@
     </head>
 
     <body>
-        <div data-ui-view></div>
+        <div data-ng-include="'./components/navbar.html'"></div>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-12" data-ui-view></div>
+        </div>
 
         <!-- Resources -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
