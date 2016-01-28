@@ -2,9 +2,40 @@ body {
   color: #1d112e;
   background-color: #ebe5f5;
   /*background-color: #f9f7fc; a much lighter purple*/
-  font-family: cursive;
+}
+
+/* <h1> should be used for page headers */
+h1 {
+    text-align: center;
 }
 
 .light-text {
     color: white;
+}
+
+.fit-width {
+    width: 100%;
+}
+
+.main-content {
+    margin-top: 60px;
+    font-family: cursive;
+    padding-bottom: 50px;
+}
+
+.page-content h1 {
+    font-size: 4em;
+}
+
+.page-content span,
+.page-content p {
+    font-size: 2em;
+}
+
+.primary-picture {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+    display: block;
+    max-width: 100%;
+    margin: 50px 0px;
+    border: solid white 10px;
 }

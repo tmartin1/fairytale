@@ -4,7 +4,15 @@
   "description": "Wedding Website",
   "main": "index.js",
   "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-ui-bootstrap": "^1.1.1",
+    "angular-ui-router": "^0.2.17",
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.0",
+    "moment": "^2.11.1",
     "nodemon": "^1.8.1"
   }
 }
