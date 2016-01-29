@@ -1,1 +1,39 @@
-<h1>{{ vm.title }}</h1>
+<div class="content-header">
+    <h1>The Wedding Party</h1>
+</div>
+
+<div class="wedding-party-block">
+    <!-- Bridesmaids (right column) -->
+    <div class="col-md-6">
+        <div class="person-block" data-ng-repeat="gm in vm.bridesmaids">
+            <div class="name">
+                {{ gm.name }}
+            </div>
+            <img class="pic" src="{{ gm.pic }}" alt="" />
+            <div class="bio">
+                {{ gm.bio }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Groomsmen (left column) -->
+    <div class="col-md-6">
+        <div class="person-block" data-ng-repeat="gm in vm.groomsmen track by $index">
+            <div class="name">
+                {{ gm.name }}
+            </div>
+            <div>
+                <img class="pic" src="{{ gm.pic }}" alt="It's an awesome picture of {{ gm.name }}!" />
+                <div class="bio">
+                    <st>{{ gm.title }}</st>
+                    <br><br>
+                    <div data-ng-include="vm.bioUrl(gm.bio)"></div>
+                </div>
+            </div>
+            <center data-ng-hide="$last">
+                <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
+            </center>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,43 @@
+.wedding-party-block {
+    /**/
+}
+
+.person-block {
+    /*border-bottom: 1px solid white;*/
+}
+.person-block:last-of-type {
+    /*border: none;*/
+}
+
+.person-block .name {
+    display: block;
+    font-size: 2.5em;
+}
+
+.person-block .pic {
+    max-width: 400px;
+    max-height: 400px;
+    /*display: inline-block;*/
+    border: solid white 10px;
+    float: left;
+    margin: 8px;
+}
+
+.person-block .bio {
+    /*display: inline-block;*/
+    min-height: 400px;
+    font-size: 1.5em;
+    padding: 16px;
+}
+
+@media (max-width: 1600px) {
+    .person-block {
+        text-align: center;
+    }
+    .person-block .pic {
+        /*display: block;*/
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
