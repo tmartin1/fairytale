@@ -3,6 +3,18 @@
 </div>
 
 <div class="wedding-party-block">
-    <!-- Bridesmaids: Left column -->
-    <!-- Groomsmen: Right column -->
+    <!-- Bridesmaids (right column) -->
+    <div class="col-md-6">
+        <div class="person-block" data-ng-repeat="person in vm.bridesmaids">
+            <div data-ng-include="'./views/weddingParty/summary.html'"></div>
+        </div>
+    </div>
+
+    <!-- Groomsmen (left column) -->
+    <div class="col-md-6">
+        <div class="person-block" data-ng-repeat="person in vm.groomsmen track by $index">
+            <div data-ng-include="'./views/weddingParty/summary.html'"></div>
+        </div>
+    </div>
+
 </div>
