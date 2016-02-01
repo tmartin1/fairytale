@@ -1,6 +1,7 @@
 body {
   color: #1d112e;
   background-color: #ebe5f5;
+  font-size: 18px;
   /*background-color: #f9f7fc; a much lighter purple*/
 }
 
@@ -9,7 +10,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 28px;
     text-transform: uppercase;
 }
 
@@ -28,16 +29,16 @@ h2 {
 }
 
 .content-header {
-    margin-bottom: 50px;
+    margin: 75px auto 50px;
+}
+
+.content-header span,
+.content-header p {
+    font-size: 28px;
 }
 
 .page-content h1 {
-    font-size: 4em;
-}
-
-.page-content span,
-.page-content p {
-    font-size: 2em;
+    font-size: 60px;
 }
 
 .primary-picture {
