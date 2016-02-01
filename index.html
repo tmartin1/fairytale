@@ -13,7 +13,7 @@
 
         <!-- Application Styles -->
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="./components/navbar.css">
+        <link rel="stylesheet" href="./components/navbar/navbar.css">
         <link rel="stylesheet" href="./views/home/home.css">
         <link rel="stylesheet" href="./views/events/events.css">
         <link rel="stylesheet" href="./views/pictures/pictures.css">
@@ -25,7 +25,7 @@
     </head>
 
     <body data-ng-cloak>
-        <div data-ng-include="'./components/navbar.html'"></div>
+        <div data-ng-include="'./components/navbar/navbar.html'"></div>
 
         <div class="col-lg-10 col-lg-offset-1 col-md-12 main-content">
             <center class="page-content">
@@ -56,6 +56,7 @@
 
         <!-- App Files -->
         <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="./components/summary/summary.directive.js"></script>
         <script type="text/javascript" src="./views/home/home.controller.js"></script>
         <script type="text/javascript" src="./views/events/events.controller.js"></script>
         <script type="text/javascript" src="./views/pictures/pictures.controller.js"></script>
