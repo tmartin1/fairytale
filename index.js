@@ -5,6 +5,7 @@
             'ngAnimate',
             'ui.router',
             'ui.bootstrap',
+            'fairytale.summaryDirective',
             'fairytale.home',
             'fairytale.events',
             'fairytale.pictures',
