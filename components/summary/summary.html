@@ -1,14 +1,22 @@
-<div class="name">
-    {{ person.name }}
-</div>
-<div>
-    <img class="pic" data-ng-src="{{ vm.picUrl(person.asset) }}" alt="It's an awesome picture of {{ person.name }}!" />
-    <div class="bio">
-        <st>{{ person.title }}</st>
-        <br><br>
-        <div data-ng-include="vm.bioUrl(person.asset)"></div>
+<div class="person-block">
+    <center data-ng-show="border === 'top'">
+        <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
+    </center>
+
+    <div class="name">
+        {{ person.name }}
     </div>
+
+    <div>
+        <img class="pic" data-ng-src="{{ vm.picUrl(person.asset) }}" alt="It's an awesome picture of {{ person.name }}!" />
+        <div class="bio">
+            <st>{{ person.title }}</st>
+            <br><br>
+            <div data-ng-include="vm.bioUrl(person.asset)"></div>
+        </div>
+    </div>
+
+    <center data-ng-show="border === 'bottom'">
+        <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
+    </center>
 </div>
-<center data-ng-hide="$last">
-    <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
-</center>

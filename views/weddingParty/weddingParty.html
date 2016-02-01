@@ -3,18 +3,14 @@
 </div>
 
 <div class="wedding-party-block">
-    <!-- Bridesmaids (right column) -->
-    <div class="col-md-6">
-        <div class="person-block" data-ng-repeat="person in vm.bridesmaids">
-            <div data-ng-include="'./views/weddingParty/summary.html'"></div>
+    <div class="row" data-ng-repeat="person in vm.bridesmaids track by $index">
+        <!-- Bridesmaids (left column) -->
+        <div class="col-md-6">
+            <summary person="person" border="$first ? '' : 'top'"></summary>
+        </div>
+        <!-- Groomsmen (right column) -->
+        <div class="col-md-6">
+            <summary person="vm.groomsmen[$index]" border="$first ? '' : 'top'"></summary>
         </div>
     </div>
-
-    <!-- Groomsmen (left column) -->
-    <div class="col-md-6">
-        <div class="person-block" data-ng-repeat="person in vm.groomsmen track by $index">
-            <div data-ng-include="'./views/weddingParty/summary.html'"></div>
-        </div>
-    </div>
-
 </div>

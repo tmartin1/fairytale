@@ -9,15 +9,25 @@
             restrict: 'EA',
             templateUrl: 'components/summary/summary.html',
             scope: {
-                person: '='
+                person: '=',
+                border: '='
             },
             controller: summaryController,
-            controllerAs: 'vm',
-            bindToController: true
+            controllerAs: 'vm'
         };
 
         function summaryController () {
             var vm = this;
+            vm.bioUrl = bioUrl;
+            vm.picUrl = picUrl;
+
+            function bioUrl (person) {
+                return './views/weddingParty/bios/' + person + '.txt';
+            }
+
+            function picUrl (person) {
+                return './pics/' + person + '.jpeg';
+            }
         }
     }
 
