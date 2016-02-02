@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Wedding Website",
   "main": "./index",
+  "engines": {
+    "node": "~0.12.4"
+  },
   "dependencies": {
     "angular": "^1.4.9",
     "angular-animate": "^1.4.9",
