@@ -2,7 +2,7 @@
   "name": "fairytale",
   "version": "0.1.0",
   "description": "Wedding Website",
-  "main": "index.js",
+  "main": "./index",
   "dependencies": {
     "angular": "^1.4.9",
     "angular-animate": "^1.4.9",
@@ -15,5 +15,8 @@
     "moment": "^2.11.1",
     "nodemon": "^1.8.1",
     "velocity-animate": "^1.2.3"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
