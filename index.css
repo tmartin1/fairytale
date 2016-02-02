@@ -1,8 +1,19 @@
 body {
   color: #1d112e;
   background-color: #ebe5f5;
+  /*background-color: rgb(86,78,132, 0.6);*/
   font-size: 18px;
-  /*background-color: #f9f7fc; a much lighter purple*/
+  overflow-x: hidden;
+}
+
+.page-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    z-index: -1;
 }
 
 h1 {
