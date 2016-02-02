@@ -75,37 +75,39 @@
     }
 
     function init ($rootScope, $state) {
-        $rootScope.states = $state.get().map(function (state) {
+        var states = $state.get().map(function (state, index) {
             return state.name;
         });
-        $rootScope.states.shift();
-        $rootScope.states.pop();
-        console.log($rootScope.states);
+        $rootScope.states = states.slice(1, states.length - 1);
+
+        $rootScope.slideAnimation = 'fade-in';
+        $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
+            var current = $rootScope.states.indexOf(fromState.name);
+            var target = $rootScope.states.indexOf(toState.name);
+            var direction = target > current ? 'left' : 'right';
+            $rootScope.slideAnimation = 'slide-' + direction;
+        });
     }
 
     function mainController ($rootScope, $state) {
         var vm = this;
-
         vm.leftSwipe = leftSwipe;
         vm.rightSwipe = rightSwipe;
-        $rootScope.slideAnimation = 'fade-in';
 
         function leftSwipe () {
             var current = $rootScope.states.indexOf($state.current.name);
             var next = $rootScope.states[current + 1];
             if (next) {
-                $rootScope.slideAnimation = 'slide slide-left';
                 $state.go(next);
             }
-        };
+        }
 
         function rightSwipe () {
             var current = $rootScope.states.indexOf($state.current.name);
             if (current > 0) {
-                $rootScope.slideAnimation = 'slide slide-right';
                 $state.go($rootScope.states[current - 1]);
             }
-        };
+        }
     }
 
 })();
