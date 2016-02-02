@@ -1,13 +1,16 @@
 .navbar {
-    background-color: #f9f7fc;
-    font-size: 1.1em;
+    background-color: #ebe5f5;
+    border-radius: 0px;
+    border: none;
+    font-size: 16px;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    background-color: #ebe5f5;
+    background-color: #afa8c8;
     font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .flower-border {
