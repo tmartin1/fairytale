@@ -29,3 +29,33 @@
 <center class="fit-width">
     <img class="flower-border" src="./images/minted_flower_border.png" alt="" />
 </center>
+
+<div class="navbar-select dropdown">
+    <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+        {{ $state.current.name }}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="home">Home</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="events">Events</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="story">Our Story</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="weddingParty">Wedding Party</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="travel">Travel &amp; Accomodations</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="pictures">Pictures</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="registry">Gift Registry</a>
+        </li>
+    </ul>
+</div>

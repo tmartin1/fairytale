@@ -75,6 +75,7 @@
     }
 
     function init ($rootScope, $state) {
+        $rootScope.$state = $state;
         var states = $state.get().map(function (state, index) {
             return state.name;
         });
@@ -83,9 +84,13 @@
         $rootScope.slideAnimation = 'fade-in';
         $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
             var current = $rootScope.states.indexOf(fromState.name);
-            var target = $rootScope.states.indexOf(toState.name);
-            var direction = target > current ? 'left' : 'right';
-            $rootScope.slideAnimation = 'slide-' + direction;
+            if (current === -1) {
+                $rootScope.slideAnimation = 'fade-in';
+            } else {
+                var target = $rootScope.states.indexOf(toState.name);
+                var direction = target > current ? 'left' : 'right';
+                $rootScope.slideAnimation = 'slide slide-' + direction;
+            }
         });
     }
 
