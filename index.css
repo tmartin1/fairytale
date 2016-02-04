@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
@@ -38,22 +38,24 @@ h2 {
     font-family: cursive;
     padding-bottom: 50px;
 }
-.content-header {
-    margin: 75px auto 50px;
-}
 @media (max-width: 800px) {
     .main-content {
         margin-top: 20px;
     }
+}
+
+.content-header {
+    margin: 75px auto 50px;
+}
+.content-header span,
+.content-header p {
+    font-size: 28px;
+}
+@media (max-width: 800px) {
     .content-header {
         margin-top: 26px;
         margin-bottom: 26px;
     }
-}
-
-.content-header span,
-.content-header p {
-    font-size: 28px;
 }
 
 .primary-picture {
@@ -66,4 +68,8 @@ h2 {
 
 .border-picture {
     border: solid white 10px;
+}
+
+.footnote {
+    margin-top: 32px;
 }

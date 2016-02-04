@@ -1,17 +1,18 @@
-<center class="row">
-    <h1 class="content-header">Events</h1>
+<h1 class="content-header">Events</h1>
 
-    <div class="col-md-12 col-lg-6">
-        <div data-ng-repeat="event in vm.events" class="wedding-event">
-            <h2>{{ event.title }}</h2>
-            <p>{{ event.time }} {{ event.date }}</p>
-            <p>{{ event.address.street }}</p>
-            <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip }}</p>
-        </div>
+<div data-ng-repeat="event in vm.events">
+    <div class="wedding-event">
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.time }} {{ event.date }}</p>
+        <p>{{ event.address.street }}</p>
+        <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip }}</p>
     </div>
+    <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
+</div>
 
-    <div class="col-md-12 col-lg-6 google-maps-block">
-        <iframe src="https://mapsengine.google.com/map/embed?mid=zS-bmhXF4Uzc.kztJTTNGdiAc" width="640" height="480"></iframe>
-    </div>
+<iframe class="google-maps-block" src="https://mapsengine.google.com/map/embed?mid=zS-bmhXF4Uzc.kztJTTNGdiAc" ></iframe>
 
-</center>
+<div class="footnote">
+    * If you're staying at one of the featured Disney hotels, transportations to and from all
+    wedding events will be taken care of.
+</div>

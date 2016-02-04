@@ -1,14 +1,20 @@
 .wedding-event {
     text-align: left;
-    margin-bottom: 50px;
+    padding: 8px 0px;
 }
 
 .wedding-event p {
-    font-size: 1.3em;
+    font-size: 24px;
 }
 
 .google-maps-block {
-    min-width: 640px;
+    margin-top: 24px;
+    width: 100%;
+    min-width: 580px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 500px;
+    max-height: 700px;
 }
 
 /* Same px width trigger as col-sm */
