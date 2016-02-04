@@ -1,8 +1,12 @@
 body {
-  color: #1d112e;
-  background-color: #ebe5f5;
-  font-size: 18px;
-  /*overflow-x: hidden;*/
+    background-color: #ebe5f5;
+    color: #1d112e;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+body.mobile {
+    background-color: #afa8c8;
 }
 
 .page-background {
@@ -35,18 +39,17 @@ h2 {
 
 .main-content {
     margin-top: 100px;
-    font-family: cursive;
     padding-bottom: 50px;
-    /*overflow: hidden;*/
 }
 @media (max-width: 800px) {
     .main-content {
         margin-top: 20px;
+        padding: 0px 15px 20px;
     }
 }
 
 .content-header {
-    margin: 75px auto 50px;
+    margin: 68px auto 50px;
 }
 .content-header span,
 .content-header p {

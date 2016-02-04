@@ -26,25 +26,26 @@
 
     <body data-ng-cloak
         data-ng-controller="mainController as vm"
+        data-ng-class="{ mobile: isMobile }"
         data-ng-swipe-left="vm.leftSwipe()"
         data-ng-swipe-right="vm.rightSwipe()">
 
         <div data-ng-include="'./components/navbar/navbar.html'"></div>
 
         <div class="col-lg-10 col-lg-offset-1 col-md-12 main-content">
-            <center class="" data-ng-class="slideAnimation" data-ui-view></center>
+            <div class="" data-ng-class="slideAnimation" data-ui-view></div>
         </div>
 
-        <img class="page-background" src="./images/dalrek_painting.jpg" />
+        <img data-ng-if="!isMobile" class="page-background" src="./images/dalrek_painting.jpg" />
 
         <!-- Resources -->
         <script type="text/javascript" src="./vendor/js/jquery.min.js"></script>
         <script type="text/javascript" src="./vendor/js/angular.min.js"></script>
-        <!-- <script type="text/javascript" src="./vendor/js/bootstrap.min.js"></script> -->
         <script type="text/javascript" src="./vendor/js/ui-bootstrap.js"></script>
         <script type="text/javascript" src="./vendor/js/angular-ui-router.min.js"></script>
         <script type="text/javascript" src="./vendor/js/angular-animate.min.js"></script>
         <script type="text/javascript" src="./vendor/js/angular-touch.min.js"></script>
+        <script type="text/javascript" src="./vendor/js/moment.min.js"></script>
 
         <!-- App Files -->
         <script type="text/javascript" src="index.js"></script>

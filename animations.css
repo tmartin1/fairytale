@@ -45,9 +45,9 @@
 }
 .slide.ng-enter,
 .slide.ng-leave {
-    -webkit-transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: left 1s ease-out, right 1s ease-out;
+    -moz-transition: left 1s ease-out, right 1s ease-out;
+    transition: left 1s ease-out, right 1s ease-out;
 }
 
 /* Slide Left */
