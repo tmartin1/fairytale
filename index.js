@@ -17,12 +17,11 @@
             'fairytale.styleSheet'
         ])
         .config(routerConfig)
-        .run(init)
+        .run(run)
         .controller('mainController', mainController);
 
     function routerConfig ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('home');
-
         $stateProvider
             .state('home', {
                 url: '/home',
@@ -74,13 +73,30 @@
             });
     }
 
-    function init ($rootScope, $state) {
+    function run ($rootScope, $state) {
+        // Determine current device.
+        var ua = navigator.userAgent;
+        $rootScope.isMobile = ua.match(/Android|iPhone|iPad|iPod|IEMobile|BlackBerry|Opera Mini/i);
+
+        var body = angular.element('body');
+
+        // If device is not mobile, disable swipe events.
+        if (!$rootScope.isMobile) {
+            body.removeAttr('data-ng-swipe-left');
+            body.removeAttr('data-ng-swipe-right');
+        }
+
+        // var uiView = angular.element(body.find('div')[1]);
+        // console.log(uiView);
+
+        // Expose and define exposed/navable states.
         $rootScope.$state = $state;
         var states = $state.get().map(function (state, index) {
             return state.name;
         });
         $rootScope.states = states.slice(1, states.length - 1);
 
+        // Define state transition animation.
         $rootScope.slideAnimation = 'fade-in';
         $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
             var current = $rootScope.states.indexOf(fromState.name);

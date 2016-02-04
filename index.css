@@ -2,7 +2,7 @@ body {
   color: #1d112e;
   background-color: #ebe5f5;
   font-size: 18px;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .page-background {
@@ -37,6 +37,7 @@ h2 {
     margin-top: 100px;
     font-family: cursive;
     padding-bottom: 50px;
+    /*overflow: hidden;*/
 }
 @media (max-width: 800px) {
     .main-content {
