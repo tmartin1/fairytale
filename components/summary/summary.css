@@ -4,7 +4,7 @@
     padding: 10px;
 }
 
-.person-block-background {
+/*.person-block-background {
     background-color: #ebe5f5;
     border-radius: 15px;
     position: absolute;
@@ -14,7 +14,7 @@
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-}
+}*/
 
 .person-block .name {
     display: block;
