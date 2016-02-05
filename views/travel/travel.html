@@ -1,7 +1,20 @@
 <h1 class="content-header">Travel &amp; Accomodations</h1>
 
 <div class="travel-block">
-    <!-- Travel info here -->
+    <ul class="nav nav-tabs travel-tabs">
+        <li role="presentation"
+            data-ng-repeat="tab in vm.tabs"
+            data-ng-class="{ 'active': vm.currentTab.name === tab.name }"
+            data-ng-click="vm.currentTab = tab">
+            <a href>{{ tab.label }}</a>
+        </li>
+    </ul>
+
+    <div class="travel-content-block">
+        <div class="fade-in" data-ng-include="vm.currentTab.url"></div>
+        <div class="content-block-background"></div>
+    </div>
+
     <!-- Flights -->
     <!-- Hotels -->
     <!-- Park tickets -->

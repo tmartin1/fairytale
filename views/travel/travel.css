@@ -1,3 +1,37 @@
 .travel-block {
-    /**/
+}
+
+.travel-block .travel-tabs {
+    /*background-color: */
+}
+
+.travel-block .travel-tabs a {
+    color: #1d112e;
+    font-size: 24px;
+}
+.travel-block .travel-tabs a:hover {
+    color: #1d112e;
+}
+.travel-block .nav-tabs>li.active>a {
+    color: #1d112e;
+    background-color: #ebe5f5;
+}
+
+.travel-block .travel-content-block {
+    display: block;
+    position: relative;
+    padding: 16px;
+}
+
+.hotel-table {
+    margin: 8px 16px 32px;
+}
+
+.hotel-table td {
+    padding: 8px 16px;
+}
+
+.travel-content-block .content-block-background {
+    border-radius: 0px 0px 15px 15px;
+
 }
