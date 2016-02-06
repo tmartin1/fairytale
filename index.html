@@ -28,8 +28,8 @@
     <body data-ng-cloak
         data-ng-controller="mainController as vm"
         data-ng-class="{ mobile: isMobile }"
-        data-ng-swipe-left="vm.leftSwipe()"
-        data-ng-swipe-right="vm.rightSwipe()">
+        data-ng-swipe-left="vm.leftSwipe($event)"
+        data-ng-swipe-right="vm.rightSwipe($event)">
 
         <div data-ng-include="'./components/navbar/navbar.html'"></div>
 

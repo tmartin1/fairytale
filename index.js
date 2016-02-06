@@ -98,16 +98,16 @@
 
         // Define state transition animation.
         $rootScope.slideAnimation = 'fade-in';
-        $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
-            var current = $rootScope.states.indexOf(fromState.name);
-            if (current === -1) {
-                $rootScope.slideAnimation = 'fade-in';
-            } else {
-                var target = $rootScope.states.indexOf(toState.name);
-                var direction = target > current ? 'left' : 'right';
-                $rootScope.slideAnimation = 'slide slide-' + direction;
-            }
-        });
+        // $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
+        //     var current = $rootScope.states.indexOf(fromState.name);
+        //     if (current === -1) {
+        //         $rootScope.slideAnimation = 'fade-in';
+        //     } else {
+        //         var target = $rootScope.states.indexOf(toState.name);
+        //         var direction = target > current ? 'left' : 'right';
+        //         $rootScope.slideAnimation = 'slide slide-' + direction;
+        //     }
+        // });
     }
 
     function mainController ($rootScope, $state) {
@@ -115,7 +115,8 @@
         vm.leftSwipe = leftSwipe;
         vm.rightSwipe = rightSwipe;
 
-        function leftSwipe () {
+        function leftSwipe (event) {
+            event.preventDefault();
             var current = $rootScope.states.indexOf($state.current.name);
             var next = $rootScope.states[current + 1];
             if (next) {
@@ -123,7 +124,8 @@
             }
         }
 
-        function rightSwipe () {
+        function rightSwipe (event) {
+            event.preventDefault();
             var current = $rootScope.states.indexOf($state.current.name);
             if (current > 0) {
                 $state.go($rootScope.states[current - 1]);
