@@ -1,7 +1,7 @@
 body {
     background-color: #ebe5f5;
     color: #1d112e;
-    font-family: cursive;
+    font-family: cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
 }
 
@@ -25,9 +25,18 @@ h1 {
     text-align: center;
 }
 
+h1 small {
+    color: black;
+}
+
 h2 {
-    font-size: 32px;
-    text-transform: uppercase;
+    font-family: new_walt;
+    font-size: 48px;
+    /*text-transform: uppercase;*/
+}
+
+.disney-font {
+    font-family: new_walt;
 }
 
 .light-text {
@@ -36,6 +45,10 @@ h2 {
 
 .fit-width {
     width: 100%;
+}
+
+.block {
+    display: block;
 }
 
 .main-content {
@@ -51,7 +64,7 @@ h2 {
 
 .content-header {
     font-family: new_walt;
-    margin: 68px auto 50px;
+    margin: 75px auto 50px;
 }
 .content-header span,
 .content-header p {
