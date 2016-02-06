@@ -1,13 +1,7 @@
-@font-face {
-    font-family: new_walt;
-    src: url('./fonts/new_walt.ttf');
-    font-size: 1.5em;
-}
-
 body {
     background-color: #ebe5f5;
     color: #1d112e;
-    font-family: cursive, new_walt;
+    font-family: youre_invited_regular, cursive;
     font-size: 18px;
 }
 
@@ -26,7 +20,8 @@ body.mobile {
 }
 
 h1 {
-    font-size: 60px;
+    font-family: new_walt;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -55,6 +50,7 @@ h2 {
 }
 
 .content-header {
+    font-family: new_walt;
     margin: 68px auto 50px;
 }
 .content-header span,

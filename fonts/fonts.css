@@ -1,0 +1,25 @@
+@font-face {
+    font-family: new_walt;
+    src: url('./new_walt.ttf');
+}
+
+@font-face {
+    font-family: youre_invited_regular;
+    src: url('./youre_invited_regular.ttf');
+}
+
+@font-face {
+    font-family: youre_invited_heavy;
+    src: url('./youre_invited_heavy.ttf');
+}
+
+@font-face {
+    font-family: great_vibes_regular;
+    src: url('./great_vibes_regular.ttf');
+}
+
+
+@font-face {
+    font-family: mardian;
+    src: url('./mardian.ttf');
+}
