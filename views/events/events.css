@@ -1,6 +1,10 @@
 .wedding-event {
+    display: block;
+    position: relative;
     text-align: left;
     padding: 8px 0px;
+    width: 600px;
+    padding-bottom: 24px;
 }
 
 .wedding-event p {

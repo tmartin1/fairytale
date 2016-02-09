@@ -32,7 +32,7 @@ h1 small {
 h2 {
     font-family: new_walt;
     font-size: 48px;
-    /*text-transform: uppercase;*/
+    margin: 24px auto 16px;
 }
 
 .disney-font {
