@@ -1,22 +1,24 @@
 <div class="hotel-summary-block">
-    <h2>{{ widget.title }}</h2>
-    <p class="hotel-summary-text">{{ widget.summary }}</p>
-    <div class="hotel-summary-widget">
+    <h2>{{ hotel.title }}</h2>
+    <p class="hotel-summary-text">{{ hotel.summary }}</p>
+    <div class="hotel-summary-media">
         <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" data-ng-click="widget.currentView='pics'" data-ng-class="{ active: widget.currentView === 'pics' }">
+            <li role="presentation" data-ng-click="hotel.currentView='pics'" data-ng-class="{ active: hotel.currentView === 'pics' }">
                 Pics
             </li>
-            <li role="presentation" data-ng-click="widget.currentView='map'" data-ng-class="{ active: widget.currentView === 'map' }">
+            <li role="presentation" data-ng-click="hotel.currentView='map'" data-ng-class="{ active: hotel.currentView === 'map' }">
                 Map
             </li>
-            <li role="presentation" data-ng-click="widget.currentView='location'" data-ng-class="{ active: widget.currentView === 'location' }">
+            <li role="presentation" data-ng-click="hotel.currentView='location'" data-ng-class="{ active: hotel.currentView === 'location' }">
                 Location
             </li>
         </ul>
-        <div class="hotel-widget-view" data-ng-switch="widget.currentView">
-            <img data-ng-switch="pics" data-ng-src="./images/{{ widget.pics[0] }}" />
-            <img data-ng-switch="map" data-ng-src="{{ widget.map }}" />
-            <iframe data-ng-switch-when="location" data-ng-src="{{ widget.googleMap }}" width="600" height="480"></iframe>
+        <div class="hotel-widget-view-wrapper">
+            <div class="hotel-widget-view" data-ng-switch="hotel.currentView">
+                <img data-ng-switch-when="pics" data-ng-src="./images/{{ hotel.pics[0] }}" />
+                <img data-ng-switch-when="map" data-ng-src="{{ hotel.map }}" />
+                <iframe data-ng-switch-when="location" data-ng-src="{{ hotel.googleMap }}"></iframe>
+            </div>
         </div>
     </div>
 </div>

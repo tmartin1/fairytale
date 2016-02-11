@@ -4,7 +4,7 @@
     angular.module('fairytale.travel', [])
         .controller('travelController', travelController);
 
-    function travelController () {
+    function travelController ($sce) {
         var vm = this;
 
         vm.tabs = [{
@@ -23,7 +23,7 @@
 
         vm.currentTab = vm.tabs[0];
 
-        vm.hotelData = [{
+        vm.hotels = [{
             title: 'Pop Century',
             summary: ['Set 1.7 miles from Disney\'s Hollywood Studios, this nostalgic resort',
             'highlights pop culture from the 1950s through the 1990s, including iconic toys,',
@@ -35,23 +35,26 @@
             '(surcharge).'].join(' '),
             pics: ['pop_1.jpg', 'pop_2.jpg', 'pop_3.jpg', 'pop_4.jpg', 'pop_5.jpg', 'pop_6.jpg'],
             map: './images/pop_century_map.jpg',
-            googleMap: 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.klRtaBRvW-NE',
+            googleMap: $sce.trustAsResourceUrl(
+                'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.klRtaBRvW-NE'),
             currentView: 'pics'
         }, {
             title: 'Port Orleans - Riverside',
             summary: '',
             pics: [''],
             map: '',
-            googleMap: 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0',
+            googleMap: $sce.trustAsResourceUrl(
+                'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0'),
             currentView: 'pics'
         }, {
             title: 'Boardwalk',
             summary: '',
             pics: [''],
             map: '',
-            googleMap: 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.ks1ZSntKwEuE',
+            googleMap: $sce.trustAsResourceUrl(
+                'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.ks1ZSntKwEuE'),
             currentView: 'pics'
-        }]
+        }];
     }
 
 })();
