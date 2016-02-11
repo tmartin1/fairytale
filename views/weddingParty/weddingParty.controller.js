@@ -39,11 +39,11 @@
 
         vm.groomsmen = [{
             name: 'Alexander Martin',
-            title: 'Best Man • Big Bro • Sage • Guardian',
+            title: 'Best Man • Brother • Sage • Guardian',
             asset: 'alex'
         }, {
             name: 'Nicholas Martin',
-            title: 'Best Man • Lil Bro • Inspiration • Telepathic Taboo Partner • ADC',
+            title: 'Best Man • Brother • Inspiration • Telepathic Taboo Partner • ADC',
             asset: 'nick'
         }, {
             name: 'Christophe Van Elewyck',

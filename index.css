@@ -1,8 +1,8 @@
 body {
     background-color: #ebe5f5;
     color: #1d112e;
-    font-family: cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 22px;
 }
 
 body.mobile {
@@ -31,8 +31,12 @@ h1 small {
 
 h2 {
     font-family: new_walt;
-    font-size: 48px;
+    font-size: 60px;
     margin: 24px auto 16px;
+}
+
+h3 {
+    font-size: 32px;
 }
 
 .disney-font {
@@ -64,7 +68,7 @@ h2 {
 
 .content-header {
     font-family: new_walt;
-    margin: 75px auto 50px;
+    margin: 60px auto 50px;
 }
 .content-header span,
 .content-header p {

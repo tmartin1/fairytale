@@ -18,8 +18,12 @@
     src: url('./great_vibes_regular.ttf');
 }
 
-
 @font-face {
     font-family: mardian;
     src: url('./mardian.ttf');
+}
+
+@font-face {
+    font-family: nk_mono;
+    src: url('./nk_mono.ttf');
 }

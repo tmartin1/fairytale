@@ -2,7 +2,6 @@
     background-color: #ebe5f5;
     border-radius: 0px;
     border: none;
-    font-size: 18px;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -11,17 +10,20 @@
     background-color: #afa8c8;
     font-weight: bold;
     border-radius: 5px 5px 0px 0px;
-    /*-webkit-transition: all 1s linear;*/
-    /*-moz-transition: all 1s linear;*/
-    /*transition: all 1s linear;*/
 }
 
-.flower-border {
+.flower-border-wrapper {
     position: absolute;
     left: 0;
     top: 50px;
     width: 100%;
-    max-width: 100%;
+}
+
+.flower-border {
+    position: relative;
+    margin: 0px auto;
+    width: 1600px;
+    max-width: 90%;
 }
 
 .navbar-select {
@@ -35,7 +37,6 @@
     width: 100%;
     text-transform: capitalize;
     height: 50px;
-    font-size: 18px;
 }
 
 .navbar-select button>span {

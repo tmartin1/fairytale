@@ -86,9 +86,6 @@
             body.removeAttr('data-ng-swipe-right');
         }
 
-        // var uiView = angular.element(body.find('div')[1]);
-        // console.log(uiView);
-
         // Expose and define exposed/navable states.
         $rootScope.$state = $state;
         var states = $state.get().map(function (state, index) {
