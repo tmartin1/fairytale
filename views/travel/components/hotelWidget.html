@@ -1,0 +1,22 @@
+<div class="hotel-summary-block">
+    <h2>{{ widget.title }}</h2>
+    <p class="hotel-summary-text">{{ widget.summary }}</p>
+    <div class="hotel-summary-widget">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" data-ng-click="widget.currentView='pics'" data-ng-class="{ active: widget.currentView === 'pics' }">
+                Pics
+            </li>
+            <li role="presentation" data-ng-click="widget.currentView='map'" data-ng-class="{ active: widget.currentView === 'map' }">
+                Map
+            </li>
+            <li role="presentation" data-ng-click="widget.currentView='location'" data-ng-class="{ active: widget.currentView === 'location' }">
+                Location
+            </li>
+        </ul>
+        <div class="hotel-widget-view" data-ng-switch="widget.currentView">
+            <img data-ng-switch="pics" data-ng-src="./images/{{ widget.pics[0] }}" />
+            <img data-ng-switch="map" data-ng-src="{{ widget.map }}" />
+            <iframe data-ng-switch-when="location" data-ng-src="{{ widget.googleMap }}" width="600" height="480"></iframe>
+        </div>
+    </div>
+</div>

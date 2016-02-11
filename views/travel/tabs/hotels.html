@@ -17,7 +17,7 @@
         <td>$145.13 / night</td>
     </tr>
     <tr>
-        <td>Disney’s Port Orleans—Riverside</td>
+        <td>Disney’s Port Orleans - Riverside</td>
         <td>$198.00 / night</td>
     </tr>
     <tr>
@@ -27,16 +27,52 @@
 </table>
 
 <p>
-    Prices listed above include tax and are based on double occupancy.
-    To book your Disney World Resort accommodations, please call the
-    Disney Reservation Team at (407) 827-6799. They can help you with
-    park tickets and dining reservations too!
+    Prices listed above <b>include</b> tax and are based on double occupancy.
+</p>
+<p>
+    To book your Disney World Resort accommodations, please call the Disney Reservation Team at
+    (407) 827-6799. They can help you with park tickets and dining reservations too!
 </p>
 
 <div class="footnote">
-    * If you choose to stay at an alternative Walt Disney World resort hotel, please let us know so
-    we can notify our wedding coordinator.
-    <br><br>
-    ** The Swan and Dolphin, Four Season, Shades of Green, and Disney Springs Resorts are NOT
-    official Disney hotels and therefore do not use Disney’s Magical Express.**
+    <p>
+        * If you choose to stay at an alternative Walt Disney World resort hotel, please let us know
+        so we can notify our wedding coordinator.
+    </p>
+    <p>
+        ** The Swan and Dolphin, Four Season, Shades of Green, and Disney Springs Resorts are
+        <b>NOT</b> official Disney hotels and therefore do not use Disney’s Magical Express.
+    </p>
 </div>
+
+<div data-ng-repeat="widget in vm.hotelData" data-ng-include="'./views/travel/components/hotelWidget.html'"></div>
+
+<!-- <div class="hotel-summary-block">
+    <h2>Pop Century</h2>
+    <p class="hotel-summary-text">
+        Set 1.7 miles from Disney's Hollywood Studios, this nostalgic resort highlights pop culture from
+        the 1950s through the 1990s, including iconic toys, fashions and dances. Basic rooms offer free
+        WiFi and in-room safes; upgraded rooms feature pool and courtyard views. Amenities include 3
+        pools (1 with water jets and another shaped like a bowling pin), a food court, a video arcade
+        and complimentary outdoor movies. Free transport is offered to the Disney theme parks and the
+        airport. Childcare services, locker rentals and 24-hour laundry facilities are available (surcharge).
+    </p>
+    <div class="hotel-summary-widget">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" data-ng-click="hotelWidgetView='pics'" data-ng-class="{ active: hotelWidgetView === 'pics' }">
+                Pics
+            </li>
+            <li role="presentation" data-ng-click="hotelWidgetView='map'" data-ng-class="{ active: hotelWidgetView === 'map' }">
+                Map
+            </li>
+            <li role="presentation" data-ng-click="hotelWidgetView='location'" data-ng-class="{ active: hotelWidgetView === 'location' }">
+                Location
+            </li>
+        </ul>
+        <div class="hotel-widget-view">
+            <iframe src="https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.klRtaBRvW-NE" width="600" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0" width="600" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.ks1ZSntKwEuE" width="600" height="480"></iframe>
+        </div>
+    </div>
+</div> -->

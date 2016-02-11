@@ -35,5 +35,46 @@
 
 .travel-content-block .content-block-background {
     border-radius: 0px 0px 15px 15px;
+}
 
+.hotel-summary-block {
+    display: block;
+    min-height: 600px;
+    max-width: 100%;
+}
+
+.hotel-summary-text {
+    max-width: 45%;
+    display: block;
+    float: left;
+}
+
+.hotel-summary-widget {
+    width: 600px;
+    display: block;
+    max-width: 50%;
+    display: block;
+    float: left;
+}
+.hotel-summary-widget ul {
+    float: left;
+    width: 100px;
+}
+.hotel-summary-widget ul li {
+    padding: 8px 16px;
+    margin: 4px 0px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #ebe5f5;
+    cursor: pointer;
+}
+.hotel-summary-widget ul li.active {
+    background-color: #afa8c8;
+}
+.hotel-summary-widget .hotel-widget-view,
+.hotel-widget-view img,
+.hotel-widget-view iframe {
+    width: 500px;
+    max-width: 500px;
+    max-height: 480px;
+    float: right;
 }
