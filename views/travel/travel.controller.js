@@ -12,17 +12,18 @@
             label: 'Hotels',
             url: './views/travel/tabs/hotels.html'
         }, {
-            name: 'gettingAround',
-            label: 'Getting Around',
-            url: './views/travel/tabs/gettingAround.html'
-        }, {
             name: 'parks',
             label: 'Disney World!',
             url: './views/travel/tabs/parks.html'
+        }, {
+            name: 'gettingAround',
+            label: 'Getting Around',
+            url: './views/travel/tabs/gettingAround.html'
         }];
 
         vm.currentTab = vm.tabs[0];
 
+        // Hotel info
         vm.hotels = [{
             title: 'Pop Century',
             summary: './views/travel/components/pop_century.txt',
@@ -65,6 +66,37 @@
             address: ['2101 North Epcot Resorts Boulevard', 'Lake Buena Vista, FL 32830'],
             phone: '(407) 939-6200'
         }];
+
+        // Park info
+        vm.parks = [{
+            title: 'Magic Kingdom',
+            summary: './views/travel/components/magic_kingdom.txt',
+            pics: [{
+                src: '',
+                caption: ''
+            }]
+        }, {
+            title: 'EPCOT',
+            summary: './views/travel/components/epcot.txt',
+            pics: [{
+                src: '',
+                caption: ''
+            }]
+        }, {
+            title: 'Hollywood Studios',
+            summary: './views/travel/components/hollywood_studios.txt',
+            pics: [{
+                src: '',
+                caption: ''
+            }]
+        }, {
+            title: 'Animal Kingdom',
+            summary: './views/travel/components/animal_kingdom.txt',
+            pics: [{
+                src: '',
+                caption: ''
+            }]
+        }]
     }
 
 })();

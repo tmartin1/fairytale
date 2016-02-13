@@ -1,22 +1,20 @@
-<h1 class="content-header">Travel &amp; Accomodations</h1>
-
-<div class="travel-block">
-    <ul class="nav nav-tabs travel-tabs">
-        <li role="presentation"
+<h1 class="content-header">
+    Travel &amp; Accomodations
+    <div class="travel-subpages">
+        <a class="travel-subpage-link"
             data-ng-repeat="tab in vm.tabs"
             data-ng-class="{ 'active': vm.currentTab.name === tab.name }"
             data-ng-click="vm.currentTab = tab">
-            <a href>{{ tab.label }}</a>
-        </li>
-    </ul>
+            {{ tab.label }}
+        </a>
+    </div>
+</h1>
 
+<div class="travel-block">
     <div class="travel-content-block">
         <div class="fade-in" data-ng-include="vm.currentTab.url"></div>
-        <div class="content-block-background"></div>
     </div>
 
     <!-- Flights -->
-    <!-- Hotels -->
     <!-- Park tickets -->
-    <!-- About the parks -->
 </div>

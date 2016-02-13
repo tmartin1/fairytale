@@ -1,8 +1,9 @@
-<div class="hotel-summary-block">
-    <h2>{{ hotel.title }}</h2>
+<div class="hotel-summary-block content-block">
 
     <!-- Left section -->
     <p class="hotel-summary-text">
+        <span class="hotel-summary-title">{{ hotel.title }}</span>
+        <br><br>
         <span data-ng-include="hotel.summary"></span>
         <br><br>
         <span>
@@ -52,4 +53,6 @@
             </div>
         </div>
     </div>
+
+    <div class="content-block-background"></div>
 </div>

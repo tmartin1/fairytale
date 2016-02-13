@@ -2,20 +2,34 @@
     /**/
 }
 
-.travel-block .travel-tabs {
-    /*background-color: */
+.travel-block .content-block {
+    margin: 0px 0px 32px;
+    padding: 16px;
 }
 
-.travel-block .travel-tabs a {
-    color: #1d112e;
-    font-size: 24px;
+.travel-subpages {
+    font-family: inherit;
+    font-size: 32px;
+    margin-top: 16px;
 }
-.travel-block .travel-tabs a:hover {
-    color: #1d112e;
+
+.travel-subpage-link {
+    cursor: pointer;
+    padding: 8px 16px;
 }
-.travel-block .nav-tabs>li.active>a {
-    color: #1d112e;
-    background-color: #ebe5f5;
+
+.travel-subpages a:hover,
+.travel-subpages a.active {
+    color: #23527c;
+}
+
+.travel-subpages a:hover {
+    text-decoration: none;
+}
+
+.travel-subpages a.active {
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .travel-block .travel-content-block {
@@ -34,14 +48,20 @@
 }
 
 .travel-content-block .content-block-background {
-    border-radius: 0px 0px 15px 15px;
+    /*border-radius: 0px 0px 15px 15px;*/
 }
 
+
+/*** STYLES FOR HOTELS VIEW ***/
 .hotel-summary-block {
     display: block;
-    margin: 24px 0px;
     min-height: 700px;
     max-width: 100%;
+}
+
+.hotel-summary-title {
+    font-family: new_walt;
+    font-size: 48px;
 }
 
 .hotel-summary-text {
@@ -54,9 +74,10 @@
 .hotel-summary-media {
     display: inline-flex;
     float: right;
-    width: 60%;
+    width: 52%;
     min-width: 600px;
     max-width: 1000px;
+    margin: 16px;
 }
 .hotel-summary-media ul {
     float: left;
@@ -116,4 +137,10 @@
     .hotel-widget-view {
         min-height:
     }
+}
+
+
+/*** STYLES FOR PARKS VIEW ***/
+.park-summary-block {
+    /*margin-bottom: 32px;*/
 }

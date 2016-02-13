@@ -1,28 +1,6 @@
-<h2>Magic Kingdom</h2>
-<p>
-    Magic Kingdom is our favorite park. It truly embodies the essence of Disney magic. Filled with
-    endless attractions, fantastic stage shows, parades, and incredible fireworks displays, Magic
-    Kingdom is without question the happiest place on earth.
-</p>
+<div class="park-summary-block content-block" data-ng-repeat="park in vm.parks">
+    <h2>{{ park.title }}</h2>
+    <p data-ng-include="park.summary"></p>
 
-<h2>EPCOT</h2>
-<p>
-    While it doesn’t feel like a typical theme park, EPCOT is comprised of two separate sections:
-    Future World and World Showcase. Future World is where you’ll find most the rides, while the
-    World Showcase is home to 11 country-themed pavilions with dining and shopping experiences.
-</p>
-
-<h2>Hollywood Studios</h2>
-<p>
-    Designed to focus on the magic of Hollywood, Disney's Hollywood Studios gives visitors the
-    opportunity to travel back in time to Hollywood's heyday of the 1930s and '40s. Hollywood
-    Studios has the best roller coaster, Tower of Terror, and a Fantasmic! Fireworks show.
-</p>
-
-<h2>Animal Kingdom</h2>
-<p>
-    Animal Kingdom is home to more than 250 different animals showcased throughout the park. It
-    features an exciting safari ride where you can tour the wild of Africa and Asia as well as a
-    thrilling roller coaster to the top of Mt. Everest! This and Magic Kingdom are the two most
-    kid-friendly parks.
-</p>
+    <div class="content-block-background"></div>
+</div>
