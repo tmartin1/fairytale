@@ -2,6 +2,12 @@
     background-color: #ebe5f5;
     border-radius: 0px;
     border: none;
+    min-height: 40px;
+    margin-bottom: 0px;
+}
+
+.navbar-nav>li>a {
+    padding: 12px;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -10,20 +16,6 @@
     background-color: #afa8c8;
     font-weight: bold;
     border-radius: 5px 5px 0px 0px;
-}
-
-.flower-border-wrapper {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 100%;
-}
-
-.flower-border {
-    position: relative;
-    margin: 0px auto;
-    width: 1600px;
-    max-width: 90%;
 }
 
 .navbar-select {
@@ -56,9 +48,5 @@
 
     .navbar-select {
         display: block;
-    }
-
-    .flower-border {
-        display: none;
     }
 }

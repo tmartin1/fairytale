@@ -1,31 +1,26 @@
 html {
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     background-color: #ebe5f5;
     color: #1d112e;
     font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+body.plainfont {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body.mobile {
     background-color: #afa8c8;
 }
 
-.page-background {
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.4;
-    z-index: -10;
-}
-
 h1 {
     font-family: new_walt;
-    font-size: 80px;
+    font-size: 76px;
     text-align: center;
 }
 
@@ -35,7 +30,7 @@ h1 small {
 
 h2 {
     font-family: new_walt;
-    font-size: 60px;
+    font-size: 48px;
     margin: 24px auto 16px;
 }
 
@@ -43,6 +38,7 @@ h3 {
     font-size: 32px;
 }
 
+/*** General Classes ***/
 .disney-font {
     font-family: new_walt;
 }
@@ -59,20 +55,45 @@ h3 {
     display: block;
 }
 
+/*** Main Content ***/
+.flower-border-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.flower-border {
+    position: relative;
+    margin: 0px auto;
+    width: 1600px;
+    max-width: 90%;
+}
+
+.page-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    z-index: -10;
+}
+
 .main-content {
-    margin-top: 100px;
     padding-bottom: 50px;
 }
 @media (max-width: 800px) {
     .main-content {
-        margin-top: 20px;
         padding: 0px 15px 20px;
+    }
+    .flower-border {
+        display: none;
     }
 }
 
+/*** Page Content ***/
 .content-header {
     font-family: new_walt;
-    margin: 60px auto 50px;
+    margin: 24px auto 48px;
 }
 .content-header span,
 .content-header p {
@@ -97,6 +118,7 @@ h3 {
     z-index: -1;
 }
 
+/*** Pictures ***/
 .primary-picture {
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
     display: block;
@@ -109,6 +131,7 @@ h3 {
     border: solid white 10px;
 }
 
+/*** Other Page Elements ***/
 .footnote {
     margin-top: 32px;
 }
