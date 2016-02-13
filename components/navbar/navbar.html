@@ -1,68 +1,46 @@
+<!-- Standard Navbar -->
 <div class="navbar navbar-default">
+
+    <!-- Left navbar links -->
     <ul class="nav navbar-nav">
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="home">Home</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="events">Events</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="story">Our Story</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="weddingParty">Wedding Party</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="travel">Travel &amp; Accommodations</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="pictures">Pictures</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="registry">Gift Registry</a>
+        <li data-ng-repeat="link in $state.get()"
+            data-ui-sref-active="active"
+            data-ng-if="link.data.title">
+            <a data-ui-sref="{{ link.name }}">{{ link.data.title }}</a>
         </li>
     </ul>
+
+    <!-- Space between left and right navbar sections -->
     <ul class="nav navbar-nav navbar-fill"><li class="navbar-fill"></li></ul>
+
+    <!-- Right navbar links -->
     <ul class="nav navbar-nav navbar-right">
-        <li uib-dropdown class="navbar-dropdown-li">
-            <a href uib-dropdown-toggle id="nav-dropdown">
-                <i class="fa fa-fw fa-cog"></i>
-            </a>
-            <ul uib-dropdown-menu aria-labelledby="nav-dropdown">
-                <li>
-                    <a href>Test</a>
+        <li uib-dropdown auto-close="outsideClick" class="navbar-dropdown-li">
+            <a href uib-dropdown-toggle id="nav-dropdown"><i class="fa fa-fw fa-cog"></i></a>
+            <ul uib-dropdown-menu aria-labelledby="nav-dropdown" class="navbar-dropdown-menu">
+                <li class="navbar-dropdown-item">
+                    <div class="btn-group">
+                        <label class="btn btn-primary fancy-font"
+                            ng-model="viewConfig.plainfont"
+                            uib-btn-radio="false"
+                            style="font-size: 20px;">
+                            Fancy Font
+                        </label>
+                        <label class="btn btn-primary plain-font"
+                            ng-model="viewConfig.plainfont"
+                            uib-btn-radio="true"
+                            style="font-size: 18px;">
+                            Plain Font
+                        </label>
+                    </div>
                 </li>
             </ul>
         </li>
     </ul>
 </div>
 
-<div class="navbar-select dropdown">
-    <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
-        {{ $state.current.name }}
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="home">Home</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="events">Events</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="story">Our Story</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="weddingParty">Wedding Party</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="travel">Travel &amp; Accommodations</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="pictures">Pictures</a>
-        </li>
-        <li data-ui-sref-active="active">
-            <a data-ui-sref="registry">Gift Registry</a>
-        </li>
-    </ul>
+
+<!-- Mobile Navbar -->
+<div class="navbar-mobile">
+    Mobile Nav
 </div>

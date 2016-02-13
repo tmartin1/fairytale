@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: nk_mono;
+    src: url('./nk_mono.ttf');
+}
+
+@font-face {
     font-family: youre_invited_regular;
     src: url('./youre_invited_regular.otf');
 }
@@ -21,9 +26,4 @@
 @font-face {
     font-family: mardian;
     src: url('./mardian.ttf');
-}
-
-@font-face {
-    font-family: nk_mono;
-    src: url('./nk_mono.ttf');
 }

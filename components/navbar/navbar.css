@@ -48,14 +48,29 @@
     font-size: 25px;
 }
 
+.navbar-dropdown-menu {
+    background-color: #ebe5f5;
+    border-color: #ebe5f5;
+    border-radius: none;
+    box-shadow: none;
+}
+
+.navbar-dropdown-item {
+    padding: 8px 12px;
+}
+
+.navbar-dropdown-item label {
+    font-size: inherit;
+}
+
 
 /*** Styles for mobile navbar ***/
-.navbar-select {
+.navbar-mobile {
     display: none;
     width: 100%;
 }
 
-.navbar-select button {
+.navbar-mobile button {
     background-color: transparent;
     border-radius: 0px;
     width: 100%;
@@ -63,13 +78,13 @@
     height: 50px;
 }
 
-.navbar-select button>span {
+.navbar-mobile button>span {
     position: absolute;
     right: 20px;
     top: 25px;
 }
 
-.navbar-select .dropdown-menu {
+.navbar-mobile .dropdown-menu {
     width: 100%;
 }
 
@@ -78,7 +93,7 @@
         display: none;
     }
 
-    .navbar-select {
+    .navbar-mobile {
         display: block;
     }
 }

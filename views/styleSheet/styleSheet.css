@@ -31,20 +31,40 @@ Greys:
     /*background-color: white;*/
 }
 
-.color-demo-box {
+.demo-box {
+    background: white;
     border: solid white 50px;
-    margin: 0 auto;
-    width: 50%;
-    text-transform: capitalize;
+    display: inline-block;
+    margin: 16px 16px;
+    width: 100%;
+    min-width: 800px;
+    max-width: 900px;
+    vertical-align: top;
 }
 
-.color-demo-box h3 {
-    background-color: white;
+.demo-box input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 0px 8px;
+}
+
+.demo-box input:focus {
+    outline: none;
+    border-bottom-color: blue;
+}
+
+.demo-box h3 {
     padding: 0px 0px 25px;
     margin: 0px;
 }
 
+.font-demo-box {
+    display: block;
+}
+
 .hue-demo-box {
+    display: block;
     height: 100px;
     width: 100%;
     padding: 15px;

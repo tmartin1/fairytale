@@ -6,7 +6,7 @@
 
     function summaryDirective () {
         return {
-            restrict: 'EA',
+            restrict: 'E',
             templateUrl: 'components/summary/summary.html',
             scope: {
                 person: '=',

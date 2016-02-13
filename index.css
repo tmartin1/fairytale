@@ -10,10 +10,6 @@ body {
     font-size: 20px;
 }
 
-body.plainfont {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 body.mobile {
     background-color: #afa8c8;
 }
@@ -42,9 +38,27 @@ button {
     font-size: inherit;
 }
 
+/*** BOOTSTRAP CLASS OVERRIDES ***/
+.btn-group {
+    display: flex;
+}
+
 /*** General Classes ***/
 .disney-font {
     font-family: new_walt;
+}
+
+.fancy-font {
+    font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.plain-font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
 .light-text {
@@ -57,6 +71,10 @@ button {
 
 .block {
     display: block;
+}
+
+.flex {
+    display: flex;
 }
 
 .dropdown-menu {
@@ -101,7 +119,7 @@ button {
 /*** Page Content ***/
 .content-header {
     font-family: new_walt;
-    margin: 24px auto 48px;
+    margin: 16px auto 48px;
 }
 .content-header span,
 .content-header p {
@@ -122,7 +140,7 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.55;
+    opacity: 0.6;
     z-index: -1;
 }
 

@@ -18,6 +18,17 @@
                 ultradark: '#1d112e'
             }
         };
+
+        vm.fontDemoText = 'Timothy Martin and Anastacia Davis';
+        vm.fontDemoSize = 40;
+        vm.fonts = [
+            'new_walt',
+            'nk_mono',
+            'youre_invited_regular',
+            'youre_invited_heavy',
+            'great_vibes_regular',
+            'mardian'
+        ];
     }
 
 })();

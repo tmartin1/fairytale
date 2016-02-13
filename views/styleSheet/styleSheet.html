@@ -1,16 +1,38 @@
-<div class="style-sheet">
+<div class="style-sheet plain-font">
 
     <div class="content-header">
         <h1>Style Sheet</h1>
     </div>
 
+    <!-- Fonts -->
+    <div class="demo-box">
+        <h3>Fonts</h3>
+
+        <div style="text-align: left; margin-bottom: 16px;">
+            <label for="demoText">Demo Text:</label>
+            <input type="text" id="demoText" data-ng-model="vm.fontDemoText" style="width: 550px;" />
+            <div class="pull-right">
+                <label for="demoSize">Size:</label>
+                <input type="number" name="demoSize" data-ng-model="vm.fontDemoSize" style="width: 60px;" />
+            </div>
+        </div>
+
+        <div data-ng-repeat="font in vm.fonts" class="font-demo-box">
+            <p class="plain-font" style="text-align: left;">{{ font }}</p>
+            <p style="font-family: {{ font }}; font-size: {{ vm.fontDemoSize }}px;">
+                {{ vm.fontDemoText }}
+            </p>
+            <hr data-ng-if="!$last">
+        </div>
+    </div>
+
     <!-- Color samples -->
-    <div data-ng-repeat="(color, hues) in vm.colors" class="color-demo-box">
+    <div data-ng-repeat="(color, hues) in vm.colors" class="demo-box capitalize">
         <h3>{{ color }}</h3>
         <div data-ng-repeat="(name, hue) in hues"
             class="hue-demo-box" data-ng-class="{ 'light-text': name.match('dark') }"
             style="background-color: {{ hue }};">
-            {{ name }}
+            {{ name }}, {{ hue }}
         </div>
     </div>
 
