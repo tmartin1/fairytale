@@ -1,6 +1,31 @@
 <div class="hotel-summary-block">
     <h2>{{ hotel.title }}</h2>
-    <p class="hotel-summary-text">{{ hotel.summary }}</p>
+
+    <!-- Left section -->
+    <p class="hotel-summary-text">
+        <span data-ng-include="hotel.summary"></span>
+        <br><br>
+        <span>
+            <b>Resort Area:</b>
+            <br>
+            {{ hotel.resortArea }}
+            <br><br>
+            <b>Address &amp; Contact Info:</b>
+            <br>
+            {{ hotel.address[0] }}
+            <br>
+            {{ hotel.address[1] }}
+            <br>
+            {{ hotel.phone }}
+        </span>
+        <br><br>
+        <span>
+            Find more info on the Disney website at
+            <a data-ng-href="hotel.link">{{ hotel.linkName }}</a>
+        </span>
+    </p>
+
+    <!-- Right section -->
     <div class="hotel-summary-media">
         <ul class="nav nav-pills nav-stacked">
             <li role="presentation" data-ng-click="hotel.currentView='pics'" data-ng-class="{ active: hotel.currentView === 'pics' }">
