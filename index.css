@@ -1,3 +1,7 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     background-color: #ebe5f5;
     color: #1d112e;

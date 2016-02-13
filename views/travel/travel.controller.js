@@ -40,7 +40,15 @@
             currentView: 'pics'
         }, {
             title: 'Port Orleans - Riverside',
-            summary: '',
+            summary: ['This laid-back, Old South-themed resort is a short 3 miles from Epcot.',
+            'Genteel rooms come with flat-screen TVs, coffeemakers and free WiFi. Some have extra',
+            ' pull-down bunks and river views, while the upgraded Royal rooms are princess-themed',
+            ' and have headboards that show fireworks displays. Dining options include a',
+            'restaurant serving Southern specialities, a food court and 2 lounge/bars. A complex',
+            'of pools includes an old-fashioned swimming hole. Activities include free nightly',
+            'campfireplaces, pirate-themed cruises for kids (extra fee) and carriage rides',
+            '(surcharge). Free transport is offered to the other Disney resort locations and the',
+            'airport.'].join(' '),
             pics: ['orleans_1.jpg', 'orleans_2.jpg', 'orleans_3.jpg', 'orleans_4.jpg',
                 'orleans_5.jpg', 'orleans_6.jpg', 'orleans_7.jpg', 'orleans_8.jpg',
                 'orleans_9.jpg', 'orleans_10.jpg'],
@@ -50,7 +58,14 @@
             currentView: 'pics'
         }, {
             title: 'Boardwalk',
-            summary: '',
+            summary: ['Inspired by Coney Island, this elegant waterside resort with a lively',
+            'boardwalk is within walking distance of Epcot and Disney\'s Hollywood Studios. Plush',
+            'rooms and villas have balconies or patios, flat-screen TVs, DVD players, microwaves',
+            'and coffeemakers; some also offer pull-out sofas and full kitchens. Amenities include',
+            '3 pools (1 carnival-themed with a 200-ft waterslide), campfireplaces, an arcade and',
+            'bike rentals (surcharge). Dining options consist of several quick-service shops, plus',
+            'an upscale seafood restaurant and a casual Greek option. Free perks include WiFi and',
+            'parking, plus transport to the airport and throughout the Disney parks.'].join(' '),
             pics: ['boardwalk_1.jpg', 'boardwalk_2.jpg', 'boardwalk_3.jpg', 'boardwalk_4.jpg',
                 'boardwalk_5.jpg', 'boardwalk_6.jpg', 'boardwalk_7.jpg', 'boardwalk_8.jpg'],
             map: './images/boardwalk_map.jpg',

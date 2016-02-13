@@ -15,9 +15,9 @@
         </ul>
         <div class="hotel-widget-view-wrapper">
             <div class="hotel-widget-view" data-ng-switch="hotel.currentView">
-                <img data-ng-switch-when="pics" data-ng-src="./images/{{ hotel.pics[0] }}" />
-                <img data-ng-switch-when="map" data-ng-src="{{ hotel.map }}" />
-                <iframe data-ng-switch-when="location" data-ng-src="{{ hotel.googleMap }}"></iframe>
+                <img data-ng-switch-when="pics" class="fade-in" data-ng-src="./images/{{ hotel.pics[0] }}" />
+                <img data-ng-switch-when="map" class="fade-in" data-ng-src="{{ hotel.map }}" />
+                <iframe data-ng-switch-when="location" class="fade-in" data-ng-src="{{ hotel.googleMap }}"></iframe>
             </div>
         </div>
     </div>
