@@ -34,23 +34,26 @@
             'Childcare services, locker rentals and 24-hour laundry facilities are available',
             '(surcharge).'].join(' '),
             pics: ['pop_1.jpg', 'pop_2.jpg', 'pop_3.jpg', 'pop_4.jpg', 'pop_5.jpg', 'pop_6.jpg'],
-            map: './images/pop_century_map.jpg',
+            map: './images/pop_century_map.gif',
             googleMap: $sce.trustAsResourceUrl(
                 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.klRtaBRvW-NE'),
             currentView: 'pics'
         }, {
             title: 'Port Orleans - Riverside',
             summary: '',
-            pics: [''],
-            map: '',
+            pics: ['orleans_1.jpg', 'orleans_2.jpg', 'orleans_3.jpg', 'orleans_4.jpg',
+                'orleans_5.jpg', 'orleans_6.jpg', 'orleans_7.jpg', 'orleans_8.jpg',
+                'orleans_9.jpg', 'orleans_10.jpg'],
+            map: './images/pop_century_map.gif',
             googleMap: $sce.trustAsResourceUrl(
                 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0'),
             currentView: 'pics'
         }, {
             title: 'Boardwalk',
             summary: '',
-            pics: [''],
-            map: '',
+            pics: ['boardwalk_1.jpg', 'boardwalk_2.jpg', 'boardwalk_3.jpg', 'boardwalk_4.jpg',
+                'boardwalk_5.jpg', 'boardwalk_6.jpg', 'boardwalk_7.jpg', 'boardwalk_8.jpg'],
+            map: './images/boardwalk_map.jpg',
             googleMap: $sce.trustAsResourceUrl(
                 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.ks1ZSntKwEuE'),
             currentView: 'pics'

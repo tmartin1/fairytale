@@ -40,12 +40,12 @@
 .hotel-summary-block {
     display: block;
     margin: 24px 0px;
-    min-height: 500px;
+    min-height: 700px;
     max-width: 100%;
 }
 
 .hotel-summary-text {
-    max-width: 50%;
+    max-width: 45%;
     padding: 0px 16px 16px;
     display: block;
     float: left;
@@ -54,7 +54,7 @@
 .hotel-summary-media {
     display: inline-flex;
     float: right;
-    width: 50%;
+    width: 60%;
     min-width: 600px;
     max-width: 1000px;
 }
@@ -77,20 +77,27 @@
     background-color: #afa8c8;
     width: 100%;
     padding: 24px;
+    height: 650px;
 }
 .hotel-summary-media .hotel-widget-view {
-    margin: 0px auto;
+    display: flex;
+    margin: auto;
+    height: 100%;
+    min-height: 500px;
 }
 .hotel-widget-view img,
 .hotel-widget-view iframe {
-    max-width: 100%;
+    margin: auto;
+    width: 100%;
     min-width: 500px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .hotel-widget-view iframe {
+    width: 100%;
+    height: 100%;
     min-width: 500px;
-    max-width: 700px;
     min-height: 480px;
-    max-height: 700px;
 }
 @media (max-width: 1600px) {
     .hotel-summary-text {
