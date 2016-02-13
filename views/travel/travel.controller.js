@@ -42,7 +42,7 @@
             summary: './views/travel/components/port_orleans.txt',
             pics: ['orleans_1.jpg', 'orleans_2.jpg', 'orleans_3.jpg', 'orleans_4.jpg',
                 'orleans_5.jpg', 'orleans_6.jpg', 'orleans_7.jpg', 'orleans_8.jpg'],
-            map: 'pop_century_map.gif',
+            map: 'orleans_map.gif',
             googleMap: $sce.trustAsResourceUrl(
                 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0'),
             currentView: 'pics',
