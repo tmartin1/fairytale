@@ -26,7 +26,7 @@
             }
 
             function picUrl (person) {
-                return './pics/' + person + '.jpeg';
+                return './views/weddingParty/pics/' + person + '.jpeg';
             }
         }
     }

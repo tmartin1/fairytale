@@ -1,29 +1,40 @@
 <div class="navbar navbar-default">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="home">Home</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="events">Events</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="story">Our Story</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="weddingParty">Wedding Party</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="travel">Travel &amp; Accommodations</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="pictures">Pictures</a>
-            </li>
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="registry">Gift Registry</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="nav navbar-nav">
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="home">Home</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="events">Events</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="story">Our Story</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="weddingParty">Wedding Party</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="travel">Travel &amp; Accommodations</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="pictures">Pictures</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="registry">Gift Registry</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-fill"><li class="navbar-fill"></li></ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li uib-dropdown class="navbar-dropdown-li">
+            <a href uib-dropdown-toggle id="nav-dropdown">
+                <i class="fa fa-fw fa-cog"></i>
+            </a>
+            <ul uib-dropdown-menu aria-labelledby="nav-dropdown">
+                <li>
+                    <a href>Test</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <div class="navbar-select dropdown">
@@ -55,7 +66,3 @@
         </li>
     </ul>
 </div>
-
-<!-- <center class="flower-border-wrapper">
-    <img class="flower-border" src="./images/minted_flower_border.png" alt="Pretty flowers." />
-</center> -->

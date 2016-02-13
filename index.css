@@ -35,7 +35,11 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 28px;
+}
+
+button {
+    font-size: inherit;
 }
 
 /*** General Classes ***/
@@ -53,6 +57,10 @@ h3 {
 
 .block {
     display: block;
+}
+
+.dropdown-menu {
+    font-size: inherit;
 }
 
 /*** Main Content ***/
@@ -99,11 +107,11 @@ h3 {
 .content-header p {
     font-size: 28px;
 }
-@media (max-width: 800px) {
-    .content-header {
-        margin-top: 26px;
-        margin-bottom: 26px;
-    }
+
+.content-block {
+    display: block;
+    position: relative;
+    padding: 12px;
 }
 
 .content-block-background {

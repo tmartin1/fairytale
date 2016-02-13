@@ -1,9 +1,3 @@
-.person-block {
-    display: block;
-    position: relative;
-    padding: 10px;
-}
-
 .person-block .name {
     display: block;
     font-size: 32px;
