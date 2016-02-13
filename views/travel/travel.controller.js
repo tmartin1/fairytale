@@ -50,8 +50,7 @@
             '(surcharge). Free transport is offered to the other Disney resort locations and the',
             'airport.'].join(' '),
             pics: ['orleans_1.jpg', 'orleans_2.jpg', 'orleans_3.jpg', 'orleans_4.jpg',
-                'orleans_5.jpg', 'orleans_6.jpg', 'orleans_7.jpg', 'orleans_8.jpg',
-                'orleans_9.jpg', 'orleans_10.jpg'],
+                'orleans_5.jpg', 'orleans_6.jpg', 'orleans_7.jpg', 'orleans_8.jpg'],
             map: 'pop_century_map.gif',
             googleMap: $sce.trustAsResourceUrl(
                 'https://www.google.com/maps/d/embed?mid=zS-bmhXF4Uzc.kWTLkPqMCYn0'),

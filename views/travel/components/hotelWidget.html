@@ -15,7 +15,13 @@
         </ul>
         <div class="hotel-widget-view-wrapper">
             <div class="hotel-widget-view" data-ng-switch="hotel.currentView">
-                <img data-ng-switch-when="pics" class="fade-in" data-ng-src="./pics/hotels/{{ hotel.pics[0] }}" />
+                <div data-ng-switch-when="pics" class="caousel-wrapper fade-in">
+                    <uib-carousel interval="0">
+                        <uib-slide data-ng-repeat="pic in hotel.pics track by $index" index="$index">
+                            <img data-ng-src="./pics/hotels/{{ pic }}" />
+                        </uib-slide>
+                    </uib-carousel>
+                </div>
                 <img data-ng-switch-when="map" class="fade-in" data-ng-src="./pics/hotels/{{ hotel.map }}" />
                 <iframe data-ng-switch-when="location" class="fade-in" data-ng-src="{{ hotel.googleMap }}"></iframe>
             </div>

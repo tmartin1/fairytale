@@ -87,7 +87,8 @@
     max-width: 100%;
 }
 .hotel-widget-view img,
-.hotel-widget-view iframe {
+.hotel-widget-view iframe,
+.hotel-widget-view .caousel-wrapper {
     margin: auto;
     width: 100%;
     min-width: 500px;
