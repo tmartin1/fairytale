@@ -1,6 +1,6 @@
 .person-block .name {
     display: block;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .person-block .picAndBio {
@@ -9,8 +9,7 @@
 
 .person-block .pic {
     width: 90%;
-    max-width: 400px;
-    /*max-height: 400px;*/
+    max-width: 350px;
     border: solid white 10px;
     float: left;
     margin: 16px 25px;

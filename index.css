@@ -7,7 +7,7 @@ body {
     background-color: #ebe5f5;
     color: #1d112e;
     font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body.mobile {
@@ -16,22 +16,22 @@ body.mobile {
 
 h1 {
     font-family: new_walt;
-    font-size: 76px;
+    font-size: 60px;
     text-align: center;
 }
 
 h1 small {
-    color: black;
+    color: #1d112e;
 }
 
 h2 {
     font-family: new_walt;
-    font-size: 48px;
+    font-size: 40px;
     margin: 24px auto 16px;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 button {
@@ -54,7 +54,7 @@ button {
 
 .plain-font {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .capitalize {
@@ -90,7 +90,7 @@ button {
 .flower-border {
     position: relative;
     margin: 0px auto;
-    width: 1200px;
+    width: 1000px;
     max-width: 90%;
 }
 
@@ -100,7 +100,7 @@ button {
     top: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
     z-index: -10;
 }
 
@@ -148,7 +148,7 @@ button {
 .primary-picture {
     box-shadow: 0 1px 4px rgba(0,0,0,0.25);
     display: block;
-    max-width: 100%;
+    max-width: 78%;
     margin: 50px 0px;
     border: solid white 10px;
 }
@@ -159,5 +159,5 @@ button {
 
 /*** Other Page Elements ***/
 .footnote {
-    margin-top: 32px;
+    margin-top: 28px;
 }
