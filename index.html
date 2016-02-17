@@ -8,6 +8,7 @@
         <!-- Vendor Styles -->
         <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
         <link rel="stylesheet" href="./vendor/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./vendor/css/ngAnimate.css">
 
         <!-- Application Styles -->
         <link rel="stylesheet" href="./fonts/fonts.css">
@@ -38,11 +39,10 @@
         </center>
 
         <center class="col-lg-10 col-lg-offset-1 col-md-12 main-content">
-            <div data-ng-class="uiViewAnimation" data-ui-view></div>
+            <div class="fade-in" data-ui-view></div>
         </center>
 
         <img class="page-background" data-ng-src="{{ backgroundSrc }}" />
-        <!-- <img data-ng-if="isMobile" class="page-background" src="./images/dalrek_painting_mobile.jpg" /> -->
 
         <!-- Resources -->
         <script type="text/javascript" src="./vendor/js/jquery.min.js"></script>

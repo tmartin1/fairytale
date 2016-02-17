@@ -103,19 +103,6 @@
         });
         $rootScope.states = states.slice(1, states.length - 1);
 
-        // Define state transition animation.
-        $rootScope.uiViewAnimation = 'fade-in';
-        // $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState) {
-        //     var current = $rootScope.states.indexOf(fromState.name);
-        //     if (current === -1) {
-        //         $rootScope.uiViewAnimation = 'fade-in';
-        //     } else {
-        //         var target = $rootScope.states.indexOf(toState.name);
-        //         var direction = target > current ? 'left' : 'right';
-        //         $rootScope.uiViewAnimation = 'slide slide-' + direction;
-        //     }
-        // });
-
         // User view config settings.
         $rootScope.viewConfig = {
             plainfont: false
