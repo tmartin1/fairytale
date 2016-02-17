@@ -21,6 +21,20 @@
     text-align: justify;
 }
 
+.dynamic-border {
+    display: none;
+}
+
+/* Break point where summary column splits into two */
+@media (max-width: 991px) {
+    .person-block .bio {
+        min-height: 40px;
+    }
+    .dynamic-border {
+        display: block;
+    }
+}
+
 @media (min-width: 1200px) {
     .person-block .pic {
         margin-right: 25px;

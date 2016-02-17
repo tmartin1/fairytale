@@ -8,10 +8,6 @@
         return {
             restrict: 'E',
             templateUrl: 'components/navbar/navbar.html',
-            // scope: {
-            //     person: '=',
-            //     border: '='
-            // },
             controller: navbarController,
             controllerAs: 'vm'
         };
@@ -19,11 +15,20 @@
         function navbarController ($rootScope) {
             var vm = this;
 
-            vm.togglePlainfont = togglePlainfont;
+            // Open/close mobile nav menu.
+            vm.toggleMobileNavMenu = function (cmd) {
+                console.log('toggling');
+                if (cmd === 'close') {
+                    vm.mobileMenuOpen = false;
+                } else {
+                    vm.mobileMenuOpen = !vm.mobileMenuOpen;
+                }
+            };
 
-            function togglePlainfont () {
+            // Toggle body text between the fancy font and plain font.
+            vm.togglePlainfont = function () {
                 $rootScope.viewConfig.plainfont = !$rootScope.viewConfig.plainfont;
-            }
+            };
         }
     }
 

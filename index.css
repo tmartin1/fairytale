@@ -65,6 +65,10 @@ button {
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 .fit-width {
     width: 100%;
 }

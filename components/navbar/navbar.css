@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.navbar.mobile {
+    display: none;
+}
+
 .navbar-nav {
     float: none;
     margin: 0px;
@@ -67,34 +71,56 @@
 
 /*** Styles for mobile navbar ***/
 .navbar-mobile {
-    display: none;
-    width: 100%;
-}
-
-.navbar-mobile button {
-    background-color: transparent;
-    border-radius: 0px;
-    width: 100%;
-    text-transform: capitalize;
-    height: 32px;
-}
-
-.navbar-mobile button>span {
     position: absolute;
-    right: 20px;
-    top: 25px;
+    top: 0px;
+    left: 0px;
+    display: none;
 }
 
-.navbar-mobile .dropdown-menu {
+.navbar-mobile.mobile {
+    display: block;
+}
+
+.mobile-nav-button {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.mavbar-mobile-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7;
 }
 
+.navbar-mobile-menu {
+    position: fixed;
+    z-index: 9;
+    background-color: #ebe5f5;
+    height: 100%;
+    width: 300px;
+}
+
+.navbar-mobile-menu .nav-pills>li>a {
+    border-radius: 0;
+    padding: 16px;
+    font-size: 22px;
+}
+
+
+/*** Dynamic navbar settings ***/
 @media (max-width: 800px) {
-    .navbar {
+    .navbar.desktop {
         display: none;
     }
 
-    .navbar-mobile {
+    .navbar-mobile.desktop {
         display: block;
     }
 }

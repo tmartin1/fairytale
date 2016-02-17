@@ -1,5 +1,5 @@
 <!-- Standard Navbar -->
-<div class="navbar navbar-default">
+<div class="navbar navbar-default" data-ng-class="{ mobile: isMobile, desktop: !isMobile }">
 
     <!-- Left navbar links -->
     <ul class="nav navbar-nav">
@@ -41,6 +41,22 @@
 
 
 <!-- Mobile Navbar -->
-<div class="navbar-mobile">
-    Mobile Nav
+<div class="navbar-mobile" data-ng-class="{ mobile: isMobile, desktop: !isMobile }">
+    <span class="fa-stack fa-lg mobile-nav-button" data-ng-click="vm.toggleMobileNavMenu()">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+    </span>
+
+    <div class="navbar-mobile-menu" data-ng-show="vm.mobileMenuOpen">
+        <ul class="nav nav-pills nav-stacked">
+            <li data-ng-repeat="link in $state.get()"
+                data-ui-sref-active="active"
+                data-ng-if="link.data.title">
+                <a data-ui-sref="{{ link.name }}" data-ng-click="vm.toggleMobileNavMenu('close')">
+                    {{ link.data.title }}
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mavbar-mobile-backdrop fade-in fade-out" data-ng-show="vm.mobileMenuOpen" data-ng-click="vm.toggleMobileNavMenu('close')"></div>
 </div>

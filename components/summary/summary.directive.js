@@ -10,7 +10,8 @@
             templateUrl: 'components/summary/summary.html',
             scope: {
                 person: '=',
-                border: '='
+                border: '=',
+                customclass: '='
             },
             controller: summaryController,
             controllerAs: 'vm'
