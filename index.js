@@ -38,13 +38,13 @@
                 controllerAs: 'vm',
                 data: { title: 'Events' }
             })
-            .state('story', {
-                url: '/our-story',
-                templateUrl: './views/story/story.html',
-                controller: 'storyController',
-                controllerAs: 'vm',
-                data: { title: 'Our Story' }
-            })
+            // .state('story', {
+            //     url: '/our-story',
+            //     templateUrl: './views/story/story.html',
+            //     controller: 'storyController',
+            //     controllerAs: 'vm',
+            //     data: { title: 'Our Story' }
+            // })
             .state('weddingParty', {
                 url: '/wedding-party',
                 templateUrl: './views/weddingParty/weddingParty.html',

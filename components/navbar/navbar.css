@@ -115,6 +115,12 @@
     border-radius: 0;
     padding: 16px;
     font-size: 22px;
+    color: #1d112e;
+}
+
+.navbar-mobile-menu .nav-pills>li.active>a {
+    color: #ebe5f5;
+    background-color: #1d112e;
 }
 
 
