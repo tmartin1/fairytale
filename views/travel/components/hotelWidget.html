@@ -28,16 +28,15 @@
 
     <!-- Right section -->
     <div class="hotel-summary-media">
-        <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" data-ng-click="hotel.currentView='pics'" data-ng-class="{ active: hotel.currentView === 'pics' }">
-                Pics
-            </li>
-            <li role="presentation" data-ng-click="hotel.currentView='map'" data-ng-class="{ active: hotel.currentView === 'map' }">
-                Map
-            </li>
-            <li role="presentation" data-ng-click="hotel.currentView='location'" data-ng-class="{ active: hotel.currentView === 'location' }">
-                Location
-            </li>
+        <ul class="standard-hotel-widget-pic-nav nav nav-pills nav-stacked">
+            <li role="presentation" data-ng-click="hotel.currentView='pics'" data-ng-class="{ active: hotel.currentView === 'pics' }">Pics</li>
+            <li role="presentation" data-ng-click="hotel.currentView='map'" data-ng-class="{ active: hotel.currentView === 'map' }">Map</li>
+            <li role="presentation" data-ng-click="hotel.currentView='location'" data-ng-class="{ active: hotel.currentView === 'location' }">Location</li>
+        </ul>
+        <ul class="small-hotel-widget-pic-nav nav nav-tabs">
+            <li role="presentation" data-ng-click="hotel.currentView='pics'" data-ng-class="{ active: hotel.currentView === 'pics' }">Pics</li>
+            <li role="presentation" data-ng-click="hotel.currentView='map'" data-ng-class="{ active: hotel.currentView === 'map' }">Map</li>
+            <li role="presentation" data-ng-click="hotel.currentView='location'" data-ng-class="{ active: hotel.currentView === 'location' }">Location</li>
         </ul>
         <div class="hotel-widget-view-wrapper">
             <div class="hotel-widget-view" data-ng-switch="hotel.currentView">

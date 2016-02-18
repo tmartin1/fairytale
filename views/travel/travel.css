@@ -47,10 +47,6 @@
     padding: 8px 16px;
 }
 
-.travel-content-block .content-block-background {
-    /*border-radius: 0px 0px 15px 15px;*/
-}
-
 
 /*** STYLES FOR HOTELS VIEW ***/
 .hotel-summary-block {
@@ -136,6 +132,42 @@
     }
     .hotel-widget-view {
         min-height:
+    }
+}
+.small-hotel-widget-pic-nav {
+    display: none;
+}
+@media (max-width: 800px) {
+    .small-hotel-widget-pic-nav {
+        display: block;
+    }
+    .standard-hotel-widget-pic-nav {
+        display: none;
+    }
+    .hotel-summary-media {
+        display: inherit;
+        min-width: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .hotel-widget-view img {
+        min-width: 200px;
+    }
+    .hotel-summary-media ul {
+        width: 100%;
+    }
+    .hotel-summary-media ul li {
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .hotel-summary-media ul li:first-of-type {
+        border-radius: 5px 0px 0px 0px;
+    }
+    .hotel-summary-media ul li:last-of-type {
+        border-radius: 0px 5px 0px 0px;
+    }
+    .hotel-widget-view-wrapper {
+        display: flex;
     }
 }
 
