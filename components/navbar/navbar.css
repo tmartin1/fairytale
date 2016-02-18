@@ -89,6 +89,10 @@
     cursor: pointer;
 }
 
+.mobile-nav-button .fa-circle {
+    color: #1d112e;
+}
+
 .mavbar-mobile-backdrop {
     position: fixed;
     top: 0;
