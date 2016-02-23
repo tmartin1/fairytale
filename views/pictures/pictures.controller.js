@@ -7,6 +7,8 @@
     function picturesController () {
         var vm = this;
 
+        vm.pics = new Array(21);
+
         vm.engagement = [{
             title: 'Pic',
             ref: '...'
