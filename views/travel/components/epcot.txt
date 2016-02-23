@@ -1,1 +1,31 @@
+Explore exciting attractions, enchanting international pavilions, award-winning fireworks and seasonal special events. Celebrating the human spirit, Epcot has 2 distinct realms: Future World, which features technological innovations, and World Showcase, which shares with Guests the culture and cuisine of 11 countries: Mexico, Norway, China, Germany, Italy, the United States, Japan, Morocco, France, United Kingdom and Canada.
+<br>
+<br>
 While it doesn’t feel like a typical theme park, EPCOT is comprised of two separate sections: Future World and World Showcase. Future World is where you’ll find most the rides, while the World Showcase is home to 11 country-themed pavilions with dining and shopping experiences.
+<br>
+<h3>Main Attractions</h3>
+<ul class="travel-attractions">
+	<li>
+		<dt>IllumiNations</dt>
+		<dd>An incredible display of music and fireworks celebrating the world as one. If you go to Magic Kingdom, you must see this.</dd>
+	</li>
+	<li>
+		<dt>Mission: SPACE</dt>
+		<dd>An out-of-this-world way to lose your lunch! Experience authentic NASA-style training and an out-of-this-world space launch on this shuttle simulator is sure to make you sick... but it's pretty fun too.</dd>
+	</li>
+	<li>
+		<dt>ImageWorks - The "What If" Labs</dt>
+		<dd>This interactive play area—also known as the “What If” Labs—encourages little ones to explore, experience and create- and lets adults get a feel for what a rather mellow acid trip could be like.</dd>
+	</li>
+	<li>
+		<dt>Sea Base</dt>
+		<dd>Descend beneath the waves to explore the magic and mystery of life under the sea! There's a pretty cool Finding Nemo ride that goes through the aquarium too.</dd>
+	</li>
+	<li>
+		<dt>...shopping?</dt>
+		<dd>There really aren't as many attractions in EPCOT as there are in the other parks, but if you like shopping, and feeling like you're kind of shopping in different parts of the world, then you can totally do that here!</dd>
+	</li>
+	<li>
+		<a href="https://disneyworld.disney.go.com/attractions/epcot/">Comprehensive list of attractions.</a>
+	</li>
+</ul>

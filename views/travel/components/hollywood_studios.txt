@@ -1,1 +1,38 @@
+Movie magic comes to life at Disney’s Hollywood Studios, awash in the glitz and glamour of Hollywood’s Golden Age. Step into the action with attractions based on blockbuster movies and top TV shows, and delight in exciting entertainment that puts you center stage. With the vibrancy of a bustling movie set, this park features 8 sections: Hollywood Boulevard, Echo Lake, Sunset Boulevard, Streets of America, Commissary Lane, Pixar Place, Mickey Avenue and Animation Courtyard areas.
+<br><br>
 Designed to focus on the magic of Hollywood, Disney's Hollywood Studios gives visitors the opportunity to travel back in time to Hollywood's heyday of the 1930s and '40s. Hollywood Studios has the best roller coaster, Tower of Terror, and a Fantasmic! Fireworks show.
+<br>
+<h3>Main Attractions</h3>
+<ul class="travel-attractions">
+	<li>
+		<dt>Fantasmic!</dt>
+		<dd>Pretty awesome firework spectacular. Don't get me wrong, it's awesome... but the Star Wars fireworks show is probably one of the best fireworks shows I've ever seen. Go see both. You won't regret it.</dd>
+	</li>
+	<li>
+		<dt>Star Wars Fireworks</dt>
+		<dd>Fine. I don't really know what they're called, but it's an absolutely incredible fireworks show to the epic music of the Star Wars films. Do. Not. Miss. This.</dd>
+	</li>
+	<li>
+		<dt>Rock 'n' Roller Coaster</dt>
+		<dd>Easily one of the best roller coasters Disney has to offer. Blast off in a super-stretch limousine through the darkened freeways of Los Angeles to the rockin’ tunes of Aerosmith.</dd>
+	</li>
+	<li>
+		<dt>The Twilight Zone Tower of Terror</dt>
+		<dd>Tons of fun, Ana cries, but she loves it ;). Hurtle up and down into the Twilight Zone aboard a haunted "elevator" ride.</dd>
+	</li>
+	<li>
+		<dt>Toy Story Midway Mania</dt>
+		<dd>Ride and shoot moving targets at this midway-style, 4D shootin’ game starring your favorite Toy Story characters. Guys often seem to perform better on this ride for a completely unknown reason.</dd>
+	</li>
+	<li>
+		<dt>The Great Movie Ride</dt>
+		<dd>Journey into the movies during this spectacular, star-studded 22-minute tour of some of Hollywood’s most famous films. If that sounded boring to you, take it from me, this is actually a really awesome ride.</dd>
+	</li>
+	<li>
+		<dt>Star Tours</dt>
+		<dd>Make the jump to hyperspace—and to a new destination from Star Wars: The Force Awakens—during a 3D, motion-simulated space flight. If you don't do well with 3D simulated movement rides, this is sure to ruin your day! Seriously, if you get motion sick, avoid this one.</dd>
+	</li>
+	<li>
+		<a href="https://disneyworld.disney.go.com/attractions/hollywood-studios/">Comprehensive list of attractions.</a>
+	</li>
+</ul>

@@ -1,1 +1,43 @@
+Fairytale dreams come true for children of all ages at Magic Kingdom park. Delight in classic attractions, enchanting fireworks, musical parades and beloved Disney Characters across 6 whimsical lands. See fantasy become a reality as you explore Adventureland, Frontierland, Liberty Square, Fantasyland, Tomorrowland, and Main Street USA. Zoom through space, become a swashbuckling pirate and watch fireworks light up the sky over Cinderella Castle.
+<br>
+<br>
 Magic Kingdom is our favorite park. It truly embodies the essence of Disney magic. Filled with endless attractions, fantastic stage shows, parades, and incredible fireworks displays, Magic Kingdom is without question the happiest place on earth.
+<br>
+<h3>Main Attractions</h3>
+<ul class="travel-attractions">
+	<li>
+		<dt>Wishes!</dt>
+		<dd>The best fireworks show on earth. If you go to Magic Kingdom, you must see this.</dd>
+	</li>
+	<li>
+		<dt>Seven Dwarfs Mine Train</dt>
+		<dd>Race through the diamond mine from Snow White and the Seven Dwarfs on one of the smoothest, most enjoyable roller coasters ever created</dd>
+	</li>
+	<li>
+		<dt>Space Mountain</dt>
+		<dd>A classic Disney roller coaster. Blast off on a rip-roaring rocket through the darkest reaches of outer space.</dd>
+	</li>
+	<li>
+		<dt>Splash Mountain</dt>
+		<dd>Another classic! A rollicking log flume ride featuring characters and songs from the classic Disney film Song of the South.</dd>
+	</li>
+	<li>
+		<dt>Pirates of the Caribbean</dt>
+		<dd>A lot more wet since the remodel, set sail on a swashbuckling voyage to a long-forgotten time and place when pirates and privateers ruled the seas.</dd>
+	</li>
+	<li>
+		<dt>Big Thunder Mountain Railroad</dt>
+		<dd>Race through a haunted gold-mining town aboard a rollicking runaway mine train. It's the most uncomfortable rollercoaster in all the Disney parks!.. but Ana likes it!</dd>
+	</li>
+	<li>
+		<dt>Monsters, Inc. Laugh Floor</dt>
+		<dd>Good between thrill rides. Giggle and guffaw to a gaggle of jokes during a live comedy show starring characters from Monsters, Inc. and Monsters University.</dd>
+	</li>
+	<li>
+		<dt>Mickey's PhilharMagic</dt>
+		<dd>Another great opportunity to take a break from the heat of the summer. Get swept away in the magic of Disney animation in this 3D concert movie starring many favorite Disney characters.</dd>
+	</li>
+	<li>
+		<a href="https://disneyworld.disney.go.com/attractions/magic-kingdom/">Comprehensive list of attractions.</a>
+	</li>
+</ul>

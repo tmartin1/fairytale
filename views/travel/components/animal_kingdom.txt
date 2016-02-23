@@ -1,1 +1,39 @@
+Encounter exotic animals and exciting adventures at Disney’s Animal Kingdom park, one of the largest animal theme parks in the world. Home to more than 2,000 animals across 300 species, the park reflects Walt Disney’s dedication to conservation and is committed to animal care, education and research. Explore 6 enthralling lands: Oasis, Discovery Island, Africa, Rafiki's Planet Watch, Asia and DinoLand, U.S.A. areas.
+<br>
+<br>
 Animal Kingdom is home to more than 250 different animals showcased throughout the park. It features an exciting safari ride where you can tour the wild of Africa and Asia as well as a thrilling roller coaster to the top of Mt. Everest! This and Magic Kingdom are the two most kid-friendly parks.
+<br>
+<h3>Main Attractions</h3>
+<ul class="travel-attractions">
+	<li>
+		<dt>Expedition Everest</dt>
+		<dd>Super awesome roller coaster. Careen through the Himalayan mountains on a speeding train while avoiding the clutches of the mythic Abominable Snowman.</dd>
+	</li>
+	<li>
+		<dt>Festival of the Lion King</dt>
+		<dd>Go ape for the pageantry and puppetry at this big-as-Broadway show celebrating Simba, the lion cub who would be king—at home in Africa at the Harambe Theater! In all honesty, if you only have time to do two things in Animal Kingdom, it's Everest and this show.</dd>
+	</li>
+	<li>
+		<dt>Kilimanjaro Safaris</dt>
+		<dd>Ride off in an open-air vehicle for a tour of a lush African savanna, home to exotic animals like lions and elephants.</dd>
+	</li>
+	<li>
+		<dt>DINOSAUR</dt>
+		<dd>Take off on a scary, prehistoric tour aboard a rip-roaring Time Rover to save a dinosaur from extinction.</dd>
+	</li>
+	<li>
+		<dt>Conservation Station</dt>
+		<dd>ANA WORKED HERE!!! A wildlife conservation center home to animal encounters, interactive exhibits and a veterinary facility.</dd>
+	</li>
+	<li>
+		<dt>Kali River Rapids</dt>
+		<dd>A rip-roaring, river raft ride that takes you on a tour through a lush jungle landscape ravaged by illegal logging.</dd>
+	</li>
+	<li>
+		<dt>It's Tough to be a Bug!</dt>
+		<dd>Discover what it’s like to be a bug during this 3D film and live show inspired by the Disney•Pixar film, A Bug’s Life.</dd>
+	</li>
+	<li>
+		<a href="https://disneyworld.disney.go.com/attractions/animal-kingdom/">Comprehensive list of attractions.</a>
+	</li>
+</ul>

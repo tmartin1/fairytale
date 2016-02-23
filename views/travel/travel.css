@@ -67,6 +67,10 @@
     float: left;
 }
 
+.hotel-summary-text h2 {
+    margin: inherit;
+}
+
 .hotel-summary-media {
     display: inline-flex;
     float: right;
@@ -175,4 +179,12 @@
 /*** STYLES FOR PARKS VIEW ***/
 .park-summary-block {
     /*margin-bottom: 32px;*/
+}
+
+.travel-attractions dt {
+    display: inline;
+}
+
+.travel-attractions dd {
+    display: inline;
 }

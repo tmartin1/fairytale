@@ -4,7 +4,7 @@
     angular.module('fairytale.travel', [])
         .controller('travelController', travelController);
 
-    function travelController ($sce) {
+    function travelController ($location, $sce, $anchorScroll) {
         var vm = this;
 
         vm.tabs = [{
@@ -96,7 +96,12 @@
                 src: '',
                 caption: ''
             }]
-        }]
+        }];
+
+        vm.scrollTo = function (target) {
+            $location.hash(target);
+            $anchorScroll();
+        }
     }
 
 })();
