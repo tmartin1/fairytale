@@ -1,12 +1,15 @@
 .pictures-block {
-    /**/
+    display: block;
+    width: 100%;
+    max-width: 100%;
 }
 
 .showcase-picture {
     border-radius: 16px;
-    display: block;
+    display: inline-flex;
     max-width: 600px;
     max-height: 600px;
+    min-height: 400px;
     margin: 16px;
 }
 
