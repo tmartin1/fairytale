@@ -10,9 +10,9 @@ body {
     font-size: 18px;
 }
 
-body.mobile {
+/*body.mobile {
     background-color: #afa8c8;
-}
+}*/
 
 h1 {
     font-family: new_walt;
@@ -142,6 +142,7 @@ a[role="button"] {
     display: block;
     position: relative;
     padding: 12px;
+    /*background-color: rgb(235, 229, 245, 0.6);*/
 }
 
 .content-block-background {

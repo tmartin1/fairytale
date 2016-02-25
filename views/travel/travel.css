@@ -14,21 +14,20 @@
 }
 
 .travel-subpage-link {
+    color: #57348b;
     cursor: pointer;
     padding: 8px 16px;
 }
 
 .travel-subpages a:hover,
 .travel-subpages a.active {
-    color: #23527c;
-}
-
-.travel-subpages a:hover {
-    text-decoration: none;
+    /*color: #23527c;*/
+    /*color: #1d112e;*/
+    color: #57348b;
+    text-decoration: underline;
 }
 
 .travel-subpages a.active {
-    text-decoration: underline;
     text-transform: uppercase;
 }
 
@@ -44,6 +43,7 @@
 }
 
 .hotel-table td {
+    font-size: 1.1em;
     padding: 8px 16px;
 }
 
