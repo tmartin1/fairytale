@@ -7,17 +7,17 @@
     function picturesController ($rootScope, $timeout) {
         var vm = this;
 
-        vm.pics = new Array(21);
-
-        vm.engagement = [{
-            title: 'Pic',
-            ref: '...'
-        }];
-
-        vm.wedding;
+        var picCount = 21;
+        vm.pics = new Array(picCount);
+        for (var i = 0; i < picCount; i++) {
+            vm.pics[i] = {
+                index: i,
+                active: i === 0 ? true : false
+            };
+        }
 
         vm.slideshow = function (index) {
-            console.log('starting slideshow');
+            vm.pics[index].active = true;
             vm.slideshowActive = true;
             $rootScope.viewConfig.scrollLock = true;
         };
@@ -30,9 +30,8 @@
         // Maximize slideshow image size... in a shitty hacky way...
         var scaled = 0;
         function scalePics () {
-            console.log('scaling images');
-            var pics = angular.element('img');
             scaled++;
+            var pics = angular.element('img');
             angular.forEach(pics, function (pic) {
                 pic = angular.element(pic);
                 if (pic.hasClass('slideshow-image')) {

@@ -16,11 +16,11 @@
 
 <div class="slideshow-wrapper" data-ng-show="vm.slideshowActive">
     <center class="slideshow fade-in">
-        <uib-carousel interval="0">
+        <uib-carousel interval="0" start="vm.slideshowStartIndex">
             <a role="button" class="slideshow-close" data-ng-click="vm.closeSlideshow()">
                 <i class="fa fa-lg fa-close"></i>
             </a>
-            <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="$index">
+            <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="pic.index" active="pic.active">
                 <center class="slideshow-slide">
                     <img class="slideshow-image" data-ng-src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs picture of us." />
                 </center>

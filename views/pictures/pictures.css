@@ -20,7 +20,8 @@
 }
 
 .slideshow>div {
-    background-color: black;
+    background-color: #1d112e;
+    background-image: linear-gradient(to right, rgba(0,0,0,.5) 0%, rgba(0,0,0,.0001) 20%, rgba(0,0,0,.0001) 80%, rgba(0,0,0,.5) 100%);
     border-radius: 16px;
     position: fixed;
     top: 10%;
@@ -61,9 +62,16 @@
 }
 
 .slideshow .carousel-control {
-    width: 10%;
+    width: 50%;
     height: 80%;
     top: 10%;
+    background: none;
+}
+.slideshow .carousel-control .glyphicon-chevron-left {
+    left: 10%;
+}
+.slideshow .carousel-control .glyphicon-chevron-right {
+    right: 10%;
 }
 
 .slideshow-slide {
@@ -82,7 +90,6 @@
 
 .slideshow-slide img {
     display: flex;
-    /*flex: 1 0 100%;*/
     margin: auto;
     border-radius: 16px;
     max-height: 100%;
