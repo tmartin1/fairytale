@@ -73,7 +73,7 @@
     max-height: 100%;
     width: 100%;
     max-width: 100%;
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 .slideshow-slide-img-wrapper {
@@ -82,12 +82,22 @@
 
 .slideshow-slide img {
     display: flex;
-    flex: 1 0 100%;
+    /*flex: 1 0 100%;*/
     margin: auto;
     border-radius: 16px;
     max-height: 100%;
     max-width: 100%;
     vertical-align: middle;
+}
+
+.slideshow-image.portrait {
+    height: 100%;
+    width: auto;
+}
+
+.slideshow-image.landscape {
+    height: auto;
+    width: 100%;
 }
 
 .slideshow-backdrop {

@@ -22,7 +22,7 @@
             </a>
             <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="$index">
                 <center class="slideshow-slide">
-                    <img data-ng-src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs picture of us." />
+                    <img class="slideshow-image" data-ng-src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs picture of us." />
                 </center>
             </uib-slide>
         </uib-carousel>
