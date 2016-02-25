@@ -7,5 +7,26 @@
 </div>
 
 <center class="pictures-block">
-    <img class="showcase-picture img-responsive" data-ng-repeat="pic in vm.pics track by $index" src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs pic of us." />
+    <img data-ng-repeat="pic in vm.pics track by $index"
+        class="showcase-picture img-responsive"
+        data-ng-click="vm.slideshow($index)"
+        data-ng-src="./pics-of-us/{{$index + 1}}.jpg"
+        alt="Totes adorbs picture of us." />
 </center>
+
+<div class="slideshow-wrapper" data-ng-show="vm.slideshowActive">
+    <center class="slideshow fade-in">
+        <uib-carousel interval="0">
+            <a role="button" class="slideshow-close" data-ng-click="vm.closeSlideshow()">
+                <i class="fa fa-lg fa-close"></i>
+            </a>
+            <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="$index">
+                <center class="slideshow-slide">
+                    <img data-ng-src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs picture of us." />
+                </center>
+            </uib-slide>
+        </uib-carousel>
+    </center>
+
+    <div class="slideshow-backdrop" data-ng-click="vm.closeSlideshow()"></div>
+</div>

@@ -38,6 +38,10 @@ button {
     font-size: inherit;
 }
 
+a[role="button"] {
+    cursor: pointer;
+}
+
 /*** BOOTSTRAP CLASS OVERRIDES ***/
 .btn-group {
     display: flex;
@@ -79,6 +83,10 @@ button {
 
 .flex {
     display: flex;
+}
+
+.scroll-lock {
+    overflow: hidden;
 }
 
 .dropdown-menu {

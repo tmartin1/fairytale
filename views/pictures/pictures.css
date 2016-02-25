@@ -11,10 +11,85 @@
     max-height: 600px;
     min-height: 400px;
     margin: 16px;
+    cursor: pointer;
 }
 
-@media (max-width: 1568px) {
-    .showcase-picture {
-        float: none;
-    }
+/* Slideshow Styles */
+.slideshow {
+    z-index: 10;
+}
+
+.slideshow>div {
+    background-color: black;
+    border-radius: 16px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    max-height: 80%;
+    width: 80%;
+    max-width: 80%;
+    z-index: 11;
+}
+
+.slideshow .carousel-inner,
+.slideshow .carousel-inner>div {
+    height: 100%;
+}
+
+.slideshow-close {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10%;
+    width: 10%;
+    padding-top: 2.5%;
+    text-align: center;
+    z-index: 15;
+}
+.slideshow-close:active,
+.slideshow-close:hover,
+.slideshow-close:focus {
+    color: white;
+    opacity: 0.9;
+}
+.slideshow-close i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.slideshow .carousel-control {
+    width: 10%;
+    height: 80%;
+    top: 10%;
+}
+
+.slideshow-slide {
+    display: block;
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    /*margin: 0 auto;*/
+    padding: 10%;
+}
+
+.slideshow-slide img {
+    border-radius: 16px;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.slideshow-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    z-index: 9;
 }

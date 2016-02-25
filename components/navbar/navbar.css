@@ -9,10 +9,6 @@
     width: 100%;
 }
 
-.navbar.mobile {
-    display: none;
-}
-
 .navbar-nav {
     float: none;
     margin: 0px;
@@ -70,6 +66,10 @@
 
 
 /*** Styles for mobile navbar ***/
+.navbar.mobile {
+    display: none;
+}
+
 .navbar-mobile {
     position: absolute;
     top: 0px;

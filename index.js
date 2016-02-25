@@ -105,7 +105,8 @@
 
         // User view config settings.
         $rootScope.viewConfig = {
-            plainfont: false
+            plainfont: false,
+            scrollLock: false
         };
     }
 
