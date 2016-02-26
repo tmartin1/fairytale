@@ -1,12 +1,11 @@
 <h1 class="content-header">Events</h1>
 
 <div data-ng-repeat="event in vm.events">
-    <div class="wedding-event">
+    <div class="wedding-event content-block">
         <h2>{{ event.title }}</h2>
         <p>{{ event.time }} {{ event.date }}</p>
         <p>{{ event.address.street }}</p>
         <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip }}</p>
-        <div class="content-block-background"></div>
     </div>
     <img src="./images/minted_accent_break.png" alt="It's a cute line break." />
 </div>

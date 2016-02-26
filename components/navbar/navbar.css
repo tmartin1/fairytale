@@ -10,17 +10,21 @@
 }
 
 .navbar-nav {
+    display: flex;
     float: none;
     margin: 0px;
-    display: flex;
 }
 
 .navbar-nav>li {
     height: 32px;
 }
 
-.navbar-nav>li>a {
+.navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     background-color: #ebe5f5;
+    color: #1d112e;
     height: 100%;
     max-height: 100%;
     line-height: 12px;
@@ -32,7 +36,8 @@
 .navbar-default .navbar-nav>.active>a:hover {
     background-color: transparent;
     border-radius: 5px 5px 0px 0px;
-    font-weight: bold;
+    color: #1d112e;
+    font-size: 1.1em;
 }
 
 .navbar-fill {

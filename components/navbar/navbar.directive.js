@@ -14,6 +14,7 @@
 
         function navbarController ($rootScope) {
             var vm = this;
+            vm.fairydust = true;
 
             // Open/close mobile nav menu.
             vm.toggleMobileNavMenu = function (cmd) {
@@ -29,6 +30,11 @@
             vm.togglePlainfont = function () {
                 $rootScope.viewConfig.plainfont = !$rootScope.viewConfig.plainfont;
             };
+
+            vm.turnOffFairyDust = function () {
+                vm.fairydust = true;
+                console.log('TODO: Fairydust everywhere + notification that fairydust can\'t be turned off (obviously).');
+            }
         }
     }
 
