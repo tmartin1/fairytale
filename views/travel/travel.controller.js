@@ -16,9 +16,9 @@
             label: 'Disney World!',
             url: './views/travel/tabs/parks.html'
         // }, {
-            // name: 'gettingAround',
-            // label: 'Getting Around',
-            // url: './views/travel/tabs/gettingAround.html'
+            // name: 'travel',
+            // label: 'Travel',
+            // url: './views/travel/tabs/travel.html'
         }];
 
         vm.currentTab = vm.tabs[0];
