@@ -43,7 +43,7 @@
 }
 
 .hotel-table td {
-    font-size: 1.1em;
+    /*font-size: 1.1em;*/
     padding: 8px 16px;
 }
 
@@ -130,7 +130,7 @@
     }
     .hotel-summary-media {
         float: none;
-        width: 80%;
+        width: 100%;
         margin: 0px auto 16px;
         display: flex;
     }

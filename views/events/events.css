@@ -4,10 +4,14 @@
     padding: 8px 0px;
     width: 600px;
     padding-bottom: 24px;
+    font-size: inherit;
 }
 
 .wedding-event p {
     font-size: 24px;
+}
+body.mobile .wedding-event p {
+    font-size: 36px;
 }
 
 .google-maps-block {

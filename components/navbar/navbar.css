@@ -92,6 +92,7 @@
     left: 16px;
     z-index: 5;
     cursor: pointer;
+    font-size: 2.5em;
 }
 
 .mobile-nav-button .fa-circle {
@@ -113,13 +114,13 @@
     z-index: 9;
     background-color: #ebe5f5;
     height: 100%;
-    width: 300px;
+    width: 550px;
 }
 
 .navbar-mobile-menu .nav-pills>li>a {
     border-radius: 0;
     padding: 16px;
-    font-size: 22px;
+    font-size: 48px;
     color: #1d112e;
 }
 

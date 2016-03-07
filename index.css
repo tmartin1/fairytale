@@ -10,14 +10,19 @@ body {
     font-size: 18px;
 }
 
-/*body.mobile {
-    background-color: #afa8c8;
-}*/
+body.mobile {
+    /*background-color: #afa8c8;*/
+    /*font-size: inherit;*/
+    /*font-size: 1.3em;*/
+}
 
 h1 {
     font-family: new_walt;
     font-size: 60px;
     text-align: center;
+}
+body.mobile h1 {
+    font-size: 70px;
 }
 
 h1 small {
@@ -28,6 +33,9 @@ h2 {
     font-family: new_walt;
     font-size: 40px;
     margin: 24px auto 16px;
+}
+body.mobile h2 {
+    font-size: 50px;
 }
 
 h3 {
@@ -63,6 +71,9 @@ a[role="button"] {
     border-color: #57348b;
     outline: none;
 }
+
+
+/*** BOOTSTRAP CLASS OVERRIDES ***/
 
 
 /*** General Classes ***/
@@ -179,5 +190,6 @@ a[role="button"] {
 
 /*** Other Page Elements ***/
 .footnote {
+    /*font-size: 18px;*/
     margin-top: 28px;
 }
