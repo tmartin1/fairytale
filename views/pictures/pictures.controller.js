@@ -45,7 +45,7 @@
                 }
             });
         }
-        $timeout(scalePics, 1000);
+        // $timeout(scalePics, 1000);
     }
 
 })();
