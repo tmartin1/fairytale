@@ -8,6 +8,7 @@
             'ui.bootstrap',
             'fairytale.navbarDirective',
             'fairytale.summaryDirective',
+            'fairytale.sparkleDirective',
             'fairytale.home',
             'fairytale.events',
             'fairytale.pictures',

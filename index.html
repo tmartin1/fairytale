@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="fairytale">
+<html data-ng-app="fairytale" class="sparkle">
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="favicon.ico">
@@ -27,6 +27,7 @@
     </head>
 
     <body data-ng-cloak
+        class="sparkle"
         data-ng-controller="mainController as vm"
         data-ng-class="{ mobile: isMobile, 'plain-font': viewConfig.plainfont, 'scroll-lock': viewConfig.scrollLock }"
         data-ng-swipe-left="vm.leftSwipe($event)"
@@ -59,6 +60,7 @@
         <script type="text/javascript" src="./components/navbar/navbar.directive.js"></script>
         <script type="text/javascript" src="./components/summary/summary.directive.js"></script>
         <script type="text/javascript" src="./components/sparkle/sparkle.jq.js"></script>
+        <script type="text/javascript" src="./components/sparkle/sparkle.directive.js"></script>
         <script type="text/javascript" src="./views/home/home.controller.js"></script>
         <script type="text/javascript" src="./views/events/events.controller.js"></script>
         <script type="text/javascript" src="./views/pictures/pictures.controller.js"></script>

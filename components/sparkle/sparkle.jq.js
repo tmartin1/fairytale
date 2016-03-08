@@ -1,37 +1,45 @@
 $(function () {
-    // default is varying levels of transparent white sparkles
-    $('.sparkle:first').sparkleh();
+    $(document).ready(function () {
+        // default is varying levels of transparent white sparkles
+        // $('.sparkle:first').sparkleh();
 
-    // rainbow as a color generates random rainbow colros
-    // count determines number of sparkles
-    // overlap allows sparkles to migrate... watch out for other dom elements though.
-    $('.sparkle:last').sparkleh({
-        color: 'rainbow',
-        count: 100,
-        overlap: 10
-    });
+        // rainbow as a color generates random rainbow colros
+        // count determines number of sparkles
+        // overlap allows sparkles to migrate... watch out for other dom elements though.
+        $('.sparkle:last').sparkleh({
+            color: 'rainbow',
+            count: 80,
+            height: $(window).innerHeight(),
+            width: $(window).innerWidth(),
+            // overlapY: 0,
+            // overlapX: 150
+        });
+        console.log($(window));
+        console.log($(window).innerHeight());
+        console.log($(window).innerWidth());
 
-    // here we create fuscia sparkles
-    $('h1').sparkleh({
-        count: 80,
-        color: ['#ff0080', '#ff0080', '#0000FF']
-    });
+        // here we create fuscia sparkles
+        $('h1').sparkleh({
+            count: 80,
+            color: ['#ff0080', '#ff0080', '#0000FF']
+        });
 
-    $('p').sparkleh({
-        count: 20,
-        color: '#00ff00',
-        speed: 0.05
-    });
+        $('p').sparkleh({
+            count: 20,
+            color: '#00ff00',
+            speed: 0.05
+        });
 
-    // an array can be passed, too for colours
-    // for an image, the image needs to be fully loaded to set
-    // the canvas to it's height/width.
-    // speed allows us to control... the ... velocity
-    $('image').imagesLoaded(function () {
-        $('.img').sparkleh({
-            count: 25,
-            color: ['#00afec', '#fb6f4a', '#fdfec5'],
-            speed: 0.4
+        // an array can be passed, too for colours
+        // for an image, the image needs to be fully loaded to set
+        // the canvas to it's height/width.
+        // speed allows us to control... the ... velocity
+        $('image').imagesLoaded(function () {
+            $('.img').sparkleh({
+                count: 50,
+                color: ['#00afec', '#fb6f4a', '#fdfec5'],
+                // speed: 0.4
+            });
         });
     });
 });
@@ -41,25 +49,26 @@ $.fn.sparkleh = function (options) {
         var $this = $(v).css('position', 'relative');
 
         var settings = $.extend({
-            width: $this.outerWidth(),
-            height: $this.outerHeight(),
+            width: options.width || $this.outerWidth(),
+            height: options.height || $this.outerHeight(),
             color: '#FFFFFF',
             count: 30,
-            overlap: 0,
+            overlapY: 0,
+            overlapX: 0,
             speed: 1
         }, options);
 
         var sparkle = new Sparkle($this, settings);
+        sparkle.over();
 
-        $this.on({
-            'mouseover focus': function (e) {
-                sparkle.over();
-            },
-            'mouseout blur': function (e) {
-                sparkle.out();
-            }
-        });
-
+        // $this.on({
+        //     'mouseover focus': function (e) {
+        //         sparkle.over();
+        //     },
+        //     'mouseout blur': function (e) {
+        //         sparkle.out();
+        //     }
+        // });
     });
 };
 
@@ -71,12 +80,15 @@ function Sparkle ($parent, options) {
 Sparkle.prototype = {
     init: function ($parent) {
         var _this = this;
+        _this.options.overlapY = _this.options.overlapY || _this.options.overlap || 0;
+        _this.options.overlapX = _this.options.overlapX || _this.options.overlap || 0;
+
         this.$canvas = $('<canvas>')
             .addClass('sparkle-canvas')
             .css({
-                position: 'absolute',
-                top: '-' + _this.options.overlap + 'px',
-                left: '-' + _this.options.overlap + 'px',
+                position: 'fixed',
+                top: '-' + _this.options.overlapY + 'px',
+                left: '-' + _this.options.overlapX + 'px',
                 'pointer-events': 'none'
             })
             .appendTo($parent);
@@ -88,8 +100,8 @@ Sparkle.prototype = {
         this.sprites = [0, 6, 13, 20];
         this.sprite.src = this.datauri;
 
-        this.canvas.width = this.options.width + (this.options.overlap * 2);
-        this.canvas.height = this.options.height + (this.options.overlap * 2);
+        this.canvas.width = this.options.width + (this.options.overlapX * 2);
+        this.canvas.height = this.options.height + (this.options.overlapY * 2);
 
         this.particles = this.createSparkles(this.canvas.width, this.canvas.height);
 
