@@ -20,8 +20,12 @@
                 <i class="fa fa-lg fa-close"></i>
             </a>
             <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="pic.index" active="pic.active">
-                <center class="slideshow-slide">
+                <center class="slideshow-slide" style="flex-direction: column">
+                    <!-- <h2 data-ng-if="pic.title">{{ pic.title }}</h2> -->
                     <img class="slideshow-image" data-ng-src="./pics-of-us/{{pic.src}}.jpg" alt="Totes adorbs picture of us." />
+                    <!-- <br><br> -->
+                    <!-- <p>{{ pic.date }}</p> -->
+                    <!-- <p data-ng-if="pic.caption">{{ pic.caption }}</p> -->
                 </center>
             </uib-slide>
         </uib-carousel>

@@ -111,7 +111,11 @@
         }, {
             src: '2015-04-19'
         }, {
-            src: '2015-10-17'
+            title: 'Winning',
+            src: '2015-10-17',
+            caption: ['Ok, so we\'ve been on this ride a ton before- and I never win. Except this',
+                'time when I hit some magic hidden target or something and got 100,000 bonus',
+                'points just before the end. It was stupendous.'].join(' ')
         }, {
             src: '2015-10-18'
         }, {
