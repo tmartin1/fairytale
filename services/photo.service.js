@@ -144,11 +144,11 @@
             var modalInstance = $uibModal.open({
                 animation: false,
                 template: '<div class="zoomedPic">' +
-                    '<h2>' + pic.title + '</h2>' +
-                    '<img src="./pics-of-us/' + pic.src + '"></img>' +
+                    '<h2 data-ng-if="pic.title">' + pic.title + '</h2>' +
+                    '<img src="./pics-of-us/' + pic.src + '.jpg"></img>' +
                     '<br><br>' +
                     '<p>' + pic.date + '</p>' +
-                    '<p>' + pic.caption + '</p>' +
+                    '<p data-ng-if="pic.caption">' + pic.caption + '</p>' +
                     '</div>',
                 controller: 'storyController',
                 size: 'lg'
