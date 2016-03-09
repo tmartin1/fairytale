@@ -9,6 +9,7 @@
             'fairytale.navbarDirective',
             'fairytale.summaryDirective',
             'fairytale.sparkleDirective',
+            'fairytale.photoService',
             'fairytale.home',
             'fairytale.events',
             'fairytale.pictures',

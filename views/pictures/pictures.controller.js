@@ -4,20 +4,21 @@
     angular.module('fairytale.pictures', [])
         .controller('picturesController', picturesController);
 
-    function picturesController ($rootScope, $timeout) {
+    function picturesController ($rootScope, $timeout, photoService) {
         var vm = this;
 
-        var picCount = 21;
-        vm.pics = new Array(picCount);
-        for (var i = 0; i < picCount; i++) {
-            vm.pics[i] = {
-                index: i,
-                active: i === 0 ? true : false
-            };
-        }
+        // var picCount = 21;
+        // vm.pics = new Array(picCount);
+        // for (var i = 0; i < picCount; i++) {
+        //     vm.pics[i] = {
+        //         index: i,
+        //         active: i === 0 ? true : false
+        //     };
+        // }
+        vm.pics = photoService.getPics();
 
-        vm.slideshow = function (index) {
-            vm.pics[index].active = true;
+        vm.slideshow = function (pic) {
+            pic.active = true;
             vm.slideshowActive = true;
             $rootScope.viewConfig.scrollLock = true;
         };

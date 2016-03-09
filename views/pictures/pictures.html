@@ -8,8 +8,8 @@
 <center class="pictures-block">
     <img data-ng-repeat="pic in vm.pics track by $index"
         class="showcase-picture img-responsive"
-        data-ng-click="vm.slideshow($index)"
-        data-ng-src="./pics-of-us/{{$index + 1}}.jpg"
+        data-ng-click="vm.slideshow(pic)"
+        data-ng-src="./pics-of-us/{{pic.src}}.jpg"
         alt="Totes adorbs picture of us." />
 </center>
 
@@ -21,7 +21,7 @@
             </a>
             <uib-slide data-ng-repeat="pic in vm.pics track by $index" index="pic.index" active="pic.active">
                 <center class="slideshow-slide">
-                    <img class="slideshow-image" data-ng-src="./pics-of-us/{{$index + 1}}.jpg" alt="Totes adorbs picture of us." />
+                    <img class="slideshow-image" data-ng-src="./pics-of-us/{{pic.src}}.jpg" alt="Totes adorbs picture of us." />
                 </center>
             </uib-slide>
         </uib-carousel>
