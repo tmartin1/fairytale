@@ -14,9 +14,6 @@ $(function () {
             // overlapY: 0,
             // overlapX: 150
         });
-        console.log($(window));
-        console.log($(window).innerHeight());
-        console.log($(window).innerWidth());
 
         // here we create fuscia sparkles
         $('h1').sparkleh({
@@ -36,7 +33,7 @@ $(function () {
         // speed allows us to control... the ... velocity
         $('image').imagesLoaded(function () {
             $('.img').sparkleh({
-                count: 50,
+                count: 5,
                 color: ['#00afec', '#fb6f4a', '#fdfec5'],
                 // speed: 0.4
             });

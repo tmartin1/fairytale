@@ -94,6 +94,10 @@ a[role="button"] {
     text-transform: capitalize;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .light-text {
     color: white;
 }
