@@ -29,7 +29,10 @@
 }
 
 .story-block figure.center {
-    margin: auto;
+    max-width: 266px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .story-block figure.left {

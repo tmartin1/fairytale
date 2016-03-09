@@ -10,9 +10,17 @@
 
         vm.storyPics = [{
             src: '1.jpg',
-            title: 'Our First Picture',
+            title: 'Independence Day',
+            date: moment('20050704').format('LL'),
+            caption: ['Looking as ridiculous as ever, before Tim and Ben tried to make \'home-made',
+                'napalm\' by melting styrofoam into gasoline... that will be sure to impress this',
+                'attractive female.'].join(' ')
+        }, {
+            src: '2.jpg',
+            title: 'Our First Picture as a Couple',
             date: moment('20050817').format('LL'),
-            caption: 'Totes adorbs.'
+            caption: ['Well, we didn\'t \'officially\' decide that was our first date until a few',
+                'days after the fact (I still say Thai Ginger counts).'].join()
         }];
 
         function zoomIn (pic) {
