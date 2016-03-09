@@ -1,5 +1,38 @@
 .story-block {
-    display: block;
-    position: relative;
-    padding-top: 24px;
+    text-align: left;
+}
+
+.story-block figure {
+    background-color: white;
+    cursor: pointer;
+    margin: 16px;
+    padding: 8px;
+}
+
+.story-block figure img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.story-block figure figcaption {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.story-block figure.top {
+    margin-top: 0px;
+}
+
+.story-block figure.right {
+    float: right;
+    margin-right: 0px;
+}
+
+.story-block figure.center {
+    margin: auto;
+}
+
+.story-block figure.left {
+    float: left;
+    margin-left: 0px;
 }
