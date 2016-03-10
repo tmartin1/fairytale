@@ -36,7 +36,8 @@
 }
 
 @media (min-width: 1200px) {
-    .person-block .pic {
+    .person-block .pic,
+    .person-block .ft-picture {
         margin-right: 25px;
     }
 }
@@ -45,7 +46,8 @@
     .person-block {
         text-align: center;
     }
-    .person-block .pic {
+    .person-block .pic,
+    .person-block .ft-picture {
         float: none;
         margin-left: auto;
         margin-right: auto;

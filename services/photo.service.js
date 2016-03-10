@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('fairytale.service.photo', [])
-        .service('photoService', photoService);
+        .service('PhotoService', photoService);
 
     function photoService ($uibModal) {
         var pics = [{

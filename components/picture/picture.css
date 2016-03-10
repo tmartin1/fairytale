@@ -1,0 +1,49 @@
+.ft-picture {
+    background-color: white;
+    /*cursor: pointer;*/
+    margin: 16px;
+    padding: 8px;
+}
+.ft-picture img {
+    max-width: 250px;
+    max-height: 250px;
+}
+.ft-picture figcaption {
+    text-align: center;
+    padding-top: 8px;
+}
+.ft-picture.top {
+    margin-top: 0px;
+}
+.ft-picture.right {
+    float: right;
+    margin-right: 0px;
+}
+.ft-picture.center {
+    max-width: 266px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ft-picture.left {
+    float: left;
+    margin-left: 0px;
+}
+
+
+/**
+ * Styles for zoomed in pictures.
+ */
+.modal-lg {
+    width: 80%;
+}
+.zoomedPic {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 24px;
+}
+.zoomedPic img {
+    max-width: 100%;
+    max-height: 90%;
+}

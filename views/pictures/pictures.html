@@ -8,7 +8,7 @@
 <center class="pictures-block">
     <img data-ng-repeat="pic in vm.pics track by $index"
         class="showcase-picture img-responsive"
-        data-ng-click="vm.slideshow(pic)"
+        data-ng-click="vm.slideshow(pic, $index)"
         data-ng-src="./assets/pics-of-us/{{pic.src}}.jpg"
         alt="Totes adorbs picture of us." />
 </center>
