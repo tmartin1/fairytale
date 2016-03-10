@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('fairytale.component.navbar', [])
-        .component('navbar', {
+        .component('ftNavbar', {
             templateUrl: './components/navbar/navbar.html',
             controller: navbarController
         });

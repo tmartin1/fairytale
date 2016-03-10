@@ -25,7 +25,7 @@
     display: none;
 }
 
-/* Break point where summary column splits into two */
+/* Break point where bio column splits into two */
 @media (max-width: 991px) {
     .person-block .bio {
         min-height: 40px;

@@ -147,13 +147,13 @@
             pic = pic || {};
             var modalInstance = $uibModal.open({
                 animation: false,
-                template: '<div class="zoomedPic">' +
-                    '<h2 data-ng-if="pic.title">' + pic.title + '</h2>' +
-                    '<img src="./assets/pics-of-us/' + pic.src + '.jpg"></img>' +
-                    '<br><br>' +
-                    '<p>' + pic.date + '</p>' +
-                    '<p data-ng-if="pic.caption">' + pic.caption + '</p>' +
-                    '</div>',
+                template: ['<div class="zoomedPic">',
+                    '<h2 data-ng-if="pic.title">' + pic.title + '</h2>',
+                    '<img src="./assets/pics-of-us/' + pic.src + '.jpg"></img>',
+                    '<br><br>',
+                    '<p>' + pic.date + '</p>',
+                    '<p data-ng-if="pic.caption">' + pic.caption + '</p>',
+                    '</div>'].join(),
                 controller: 'storyController',
                 size: 'lg'
             });

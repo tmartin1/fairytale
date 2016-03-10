@@ -1,5 +1,6 @@
 angular.module('fairytale.component', [
     'fairytale.component.navbar',
-    'fairytale.component.summary',
+    'fairytale.component.picture',
+    'fairytale.component.bio',
     'fairytale.sparkleDirective'
 ]);

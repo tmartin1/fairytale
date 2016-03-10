@@ -15,8 +15,11 @@
         <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="./animations.css">
         <link rel="stylesheet" href="./pics.css">
+        <!-- Component Styles -->
         <link rel="stylesheet" href="./components/navbar/navbar.css">
-        <link rel="stylesheet" href="./components/summary/summary.css">
+        <link rel="stylesheet" href="./components/picture/picture.css">
+        <link rel="stylesheet" href="./components/bio/bio.css">
+        <!-- View Styles -->
         <link rel="stylesheet" href="./views/home/home.css">
         <link rel="stylesheet" href="./views/events/events.css">
         <link rel="stylesheet" href="./views/pictures/pictures.css">
@@ -34,7 +37,7 @@
         data-ng-swipe-left="vm.leftSwipe($event)"
         data-ng-swipe-right="vm.rightSwipe($event)">
 
-        <navbar></navbar>
+        <ft-navbar></ft-navbar>
 
         <center data-ng-if="!isMobile" class="flower-border-wrapper">
             <img class="flower-border" src="./assets/images/minted_flower_border.png" alt="Pretty flowers." />
@@ -56,15 +59,19 @@
         <script type="text/javascript" src="./vendor/js/angular-touch.min.js"></script>
         <script type="text/javascript" src="./vendor/js/moment.min.js"></script>
 
-        <!-- App Files -->
-        <script type="text/javascript" src="index.js"></script>
+        <!-- App Scripts -->
+        <script type="text/javascript" src="./index.js"></script>
+        <!-- Service Scripts -->
         <script type="text/javascript" src="./services/service.module.js"></script>
         <script type="text/javascript" src="./services/photo.service.js"></script>
+        <!-- Component Scripts -->
         <script type="text/javascript" src="./components/component.module.js"></script>
         <script type="text/javascript" src="./components/navbar/navbar.component.js"></script>
-        <script type="text/javascript" src="./components/summary/summary.component.js"></script>
+        <script type="text/javascript" src="./components/picture/picture.component.js"></script>
+        <script type="text/javascript" src="./components/bio/bio.component.js"></script>
         <script type="text/javascript" src="./components/sparkle/sparkle.jq.js"></script>
         <script type="text/javascript" src="./components/sparkle/sparkle.directive.js"></script>
+        <!-- View Scripts -->
         <script type="text/javascript" src="./views/home/home.controller.js"></script>
         <script type="text/javascript" src="./views/events/events.controller.js"></script>
         <script type="text/javascript" src="./views/pictures/pictures.controller.js"></script>

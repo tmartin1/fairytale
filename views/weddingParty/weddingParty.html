@@ -6,11 +6,11 @@
     <div class="row" data-ng-repeat="person in vm.bridesmaids track by $index">
         <!-- Bridesmaids (left column) -->
         <div class="col-md-6">
-            <summary person="person" border="!$first ? 'top' : ' '"></summary>
+            <ft-bio person="person" border="!$first ? 'top' : ' '"></ft-bio>
         </div>
         <!-- Groomsmen (right column) -->
         <div class="col-md-6">
-            <summary person="vm.groomsmen[$index]" border="'top'" customclass="$first ? 'dynamic-border' : ' '"></summary>
+            <ft-bio person="vm.groomsmen[$index]" border="'top'" customclass="$first ? 'dynamic-border' : ' '"></ft-bio>
         </div>
     </div>
 </div>

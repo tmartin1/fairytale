@@ -1,4 +1,4 @@
-<center class="{{ customclass }}" data-ng-show="border === 'top'">
+<center class="{{ $ctrl.customclass }}" data-ng-show="$ctrl.border === 'top'">
     <img src="./assets/images/minted_accent_break.png" alt="It's a cute line break." />
 </center>
 
@@ -10,11 +10,11 @@
 
     <div class="picAndBio">
         <!-- <img class="pic" data-ng-src="{{ $ctrl.picUrl($ctrl.person.asset) }}" alt="It's an awesome picture of {{ $ctrl.person.name }}!" /> -->
-        <img class="pic" data-ng-src="./views/weddingParty/pics/{{$ctrl.person.asset}}.jpeg" alt="It's an awesome picture of {{ $ctrl.person.name }}!" />
+        <img class="pic" data-ng-src="./views/weddingParty/pics/{{ $ctrl.person.asset }}.jpeg" alt="It's an awesome picture of {{ $ctrl.person.name }}!" />
         <div class="bio" data-ng-include="'./views/weddingParty/bios/' + $ctrl.person.asset + '.txt'"></div>
     </div>
 </div>
 
-<center data-ng-show="border === 'bottom'">
+<center data-ng-show="$ctrl.border === 'bottom'">
     <img src="./assets/images/minted_accent_break.png" alt="It's a cute line break." />
 </center>
