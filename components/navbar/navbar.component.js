@@ -4,8 +4,7 @@
     angular.module('fairytale.component.navbar', [])
         .component('navbar', {
             templateUrl: './components/navbar/navbar.html',
-            controller: navbarController,
-            controllerAs: 'vm'
+            controller: navbarController
         });
 
     function navbarController ($rootScope, $state) {

@@ -3,7 +3,7 @@
 
     <!-- Left navbar links -->
     <ul class="nav navbar-nav">
-        <li data-ng-repeat="link in vm.states"
+        <li data-ng-repeat="link in $ctrl.states"
             data-ui-sref-active="active"
             data-ng-if="link.data.title">
             <a data-ui-sref="{{ link.name }}">{{ link.data.title }}</a>
@@ -37,7 +37,7 @@
                 <!-- <li class="navbar-dropdown-item">
                     <button type="button"
                         class="btn btn-primary"
-                        data-ng-click="vm.turnOffFairyDust()"
+                        data-ng-click="$ctrl.turnOffFairyDust()"
                         style="font-size: 18px; width: 100%">
                         Turn off Fairydust
                     </button>
@@ -50,21 +50,21 @@
 
 <!-- Mobile Navbar -->
 <div class="navbar-mobile" data-ng-class="{ mobile: isMobile, desktop: !isMobile }">
-    <span class="fa-stack fa-lg mobile-nav-button" data-ng-click="vm.toggleMobileNavMenu()">
+    <span class="fa-stack fa-lg mobile-nav-button" data-ng-click="$ctrl.toggleMobileNavMenu()">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
     </span>
 
-    <div class="navbar-mobile-menu nga-fast nga-squash-left" data-ng-show="vm.mobileMenuOpen">
+    <div class="navbar-mobile-menu nga-fast nga-squash-left" data-ng-show="$ctrl.mobileMenuOpen">
         <ul class="nav nav-pills nav-stacked">
-            <li data-ng-repeat="link in vm.states"
+            <li data-ng-repeat="link in $ctrl.states"
                 data-ui-sref-active="active"
                 data-ng-if="link.data.title">
-                <a data-ui-sref="{{ link.name }}" data-ng-click="vm.toggleMobileNavMenu('close')">
+                <a data-ui-sref="{{ link.name }}" data-ng-click="$ctrl.toggleMobileNavMenu('close')">
                     {{ link.data.title }}
                 </a>
             </li>
         </ul>
     </div>
-    <div class="mavbar-mobile-backdrop nga-fast nga-fade" data-ng-show="vm.mobileMenuOpen" data-ng-click="vm.toggleMobileNavMenu('close')"></div>
+    <div class="mavbar-mobile-backdrop nga-fast nga-fade" data-ng-show="$ctrl.mobileMenuOpen" data-ng-click="$ctrl.toggleMobileNavMenu('close')"></div>
 </div>
