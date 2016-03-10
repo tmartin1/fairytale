@@ -149,7 +149,7 @@
                 animation: false,
                 template: '<div class="zoomedPic">' +
                     '<h2 data-ng-if="pic.title">' + pic.title + '</h2>' +
-                    '<img src="./pics-of-us/' + pic.src + '.jpg"></img>' +
+                    '<img src="./assets/pics-of-us/' + pic.src + '.jpg"></img>' +
                     '<br><br>' +
                     '<p>' + pic.date + '</p>' +
                     '<p data-ng-if="pic.caption">' + pic.caption + '</p>' +
@@ -161,8 +161,8 @@
 
         function _setDates () {
             angular.forEach(pics, function (pic) {
-                var name = pic.src.split('-').slice(0,3);
-                pic.date = moment(name.join()).format('LL');
+                var name = pic.src.split('-').slice(0, 3);
+                pic.date = new Date(name.join());
             });
         }
     }

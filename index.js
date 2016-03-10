@@ -89,7 +89,7 @@
         $rootScope.isMobile = ua.match(/Android|iPhone|iPad|iPod|IEMobile|BlackBerry|Opera Mini/i);
 
         var backgroundImg = $rootScope.isMobile ? 'dalrek_painting_mobile' : 'dalrek_painting_lr';
-        $rootScope.backgroundSrc = './images/' + backgroundImg + '.jpg';
+        $rootScope.backgroundSrc = './assets/images/' + backgroundImg + '.jpg';
 
         var body = angular.element('body');
         // If device is not mobile, disable swipe events.
