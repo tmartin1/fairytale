@@ -4,12 +4,18 @@
     angular.module('fairytale.component.slideshow', [])
         .component('ftSlideshow', {
             templateUrl: './components/slideshow/slideshow.html',
-            controller: slideshowController
+            controller: slideshowController,
+            bindings: {
+                pics: '=',
+                start: '='
+            }
         })
         .service('SlideshowService', slideshowService);
 
     function slideshowController () {
-        var vm = this;
+        console.log('slideshow!');
+        console.log(this.pics);
+        console.log(this.start);
     }
 
     function slideshowService ($uibModal) {
@@ -20,11 +26,13 @@
         // Start slideshow.
         function start (pics, index) {
             var pic = pics[index || 0] || {};
+            pic.active = true;
 
             $uibModal.open({
                 animation: false,
-                // templateUrl: './components/slideshow/slideshow.html',
-                template: '<ft-picture picture="pic"></ft-picture>',
+                template: ['<div class="zoomedPic">',
+                    '<ft-slideshow pics="vm.pics" start="vm.start"></ft-slideshow>',
+                    '</div>'].join(),
                 //
                 // template: ['<div class="zoomedPic">',
                 //     '<h2 data-ng-if="pic.title">' + pic.title + '</h2>',
@@ -33,7 +41,16 @@
                 //     '<p>' + pic.date + '</p>',
                 //     '<p data-ng-if="pic.caption">' + pic.caption + '</p>',
                 //     '</div>'].join(),
-                controller: 'storyController',
+                // controller: 'storyController',
+                // controller: slideshowController,
+                // controllerAs: '$ctrl',
+                windowTopClass: 'slideshow',
+                controller: function () {
+                    this.pics = pics;
+                    this.start = index;
+                },
+                controllerAs: 'vm',
+                bindToController: true,
                 size: 'lg'
             });
         }
