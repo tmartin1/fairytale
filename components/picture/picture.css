@@ -1,17 +1,20 @@
+ft-picture {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
 .ft-picture {
     background-color: white;
-    /*cursor: pointer;*/
+    display: inline-block;
     margin: 16px;
     padding: 8px;
 }
-.ft-picture img {
-    max-width: 250px;
-    max-height: 250px;
+.ft-picture:not(.ft-thumbnail) {
+    border: 8px solid white;
 }
-.ft-picture figcaption {
-    text-align: center;
-    padding-top: 8px;
-}
+
+/* Figure positioning styles */
 .ft-picture.top {
     margin-top: 0px;
 }
@@ -20,7 +23,6 @@
     margin-right: 0px;
 }
 .ft-picture.center {
-    max-width: 266px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +30,32 @@
 .ft-picture.left {
     float: left;
     margin-left: 0px;
+}
+
+
+/* Figure title styles */
+.ft-picture .ft-picture-title {
+    background-color: white;
+    padding: 16px;
+}
+
+/* Figure image styles */
+.ft-picture img {
+    border-radius: 0;
+}
+.ft-picture:not(.ft-thumbnail) img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.ft-picture.ft-thumbnail img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* Figure caption styles */
+.ft-picture figcaption {
+    text-align: center;
+    padding-top: 8px;
 }
 
 

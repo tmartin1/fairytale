@@ -11,9 +11,7 @@ body {
 }
 
 body.mobile {
-    /*background-color: #afa8c8;*/
-    /*font-size: inherit;*/
-    /*font-size: 1.3em;*/
+    padding-top: 40px;
 }
 
 h1 {

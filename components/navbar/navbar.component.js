@@ -9,6 +9,7 @@
 
     function navbarController ($rootScope, $state) {
         var vm = this;
+        vm.isMobile = $rootScope.isMobile;
         vm.states = $state.get();
         vm.fairydust = true;
 

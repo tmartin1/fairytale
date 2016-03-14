@@ -7,7 +7,8 @@
             bindings: {
                 picture: '<',
                 position: '@',
-                zoom: '<'
+                thumbnail: '@',
+                zoom: '@'
             },
             controller: ftPictureController
         });

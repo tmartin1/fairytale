@@ -1,5 +1,7 @@
-<figure class="ft-picture {{ $ctrl.position }}" data-ng-class="{ clickable: $ctrl.zoom !== false }" data-ng-click="$ctrl.zoomIn($ctrl.picture)">
-    <!-- <center>{{ $ctrl.picture.title }}</center> -->
+<figure class="ft-picture {{ $ctrl.position }}"
+    data-ng-class="{ clickable: $ctrl.zoom !== 'false', 'ft-thumbnail': $ctrl.thumbnail === 'true' }"
+    data-ng-click="$ctrl.zoomIn($ctrl.picture)">
+    <!-- <center class="ft-picture-title">{{ $ctrl.picture.title }}</center> -->
     <img data-ng-src="./assets/pics-of-us/{{ $ctrl.picture.src }}.jpg" alt="" />
     <figcaption data-ng-if="$ctrl.picture.date">
         {{ $ctrl.picture.date | date: "longDate" }}

@@ -1,5 +1,5 @@
 <!-- Standard Navbar -->
-<div class="navbar navbar-default" data-ng-class="{ mobile: isMobile, desktop: !isMobile }">
+<div class="navbar navbar-default" data-ng-class="{ mobile: $ctrl.isMobile, desktop: !$ctrl.isMobile }">
 
     <!-- Left navbar links -->
     <ul class="nav navbar-nav">
@@ -49,7 +49,7 @@
 
 
 <!-- Mobile Navbar -->
-<div class="navbar-mobile" data-ng-class="{ mobile: isMobile, desktop: !isMobile }">
+<div class="navbar-mobile" data-ng-class="{ mobile: $ctrl.isMobile, desktop: !$ctrl.isMobile }">
     <span class="fa-stack fa-lg mobile-nav-button" data-ng-click="$ctrl.toggleMobileNavMenu()">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-bars fa-stack-1x fa-inverse"></i>

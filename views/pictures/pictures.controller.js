@@ -9,7 +9,8 @@
         vm.pics = PhotoService.getPics();
 
         vm.slideshow = function (pic, index) {
-            // SlideshowService.start(vm.pics, index);
+            // SlideshowService.start(vm, vm.pics, index);
+            //
             pic.active = true; //
             vm.slideshowActive = true; //
             $rootScope.viewConfig.scrollLock = true; //
