@@ -18,7 +18,6 @@ ft-picture figure {
 }
 .ft-picture.ft-thumbnail {
     background-color: white;
-    border: 8px solid white;
     margin: 16px;
     padding: 8px;
 }
