@@ -53,6 +53,9 @@
     top: 10%;
     background: none;
 }
+.carousel-control:focus {
+    opacity: 0.5;
+}
 .slideshow .carousel-control .glyphicon-chevron-left {
     left: 10%;
 }
