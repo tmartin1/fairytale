@@ -26,7 +26,14 @@ ft-picture figure {
     padding: 8px;
 }
 .ft-picture:not(.ft-thumbnail) {
+    align-items: stretch;
+    align-content: stretch;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
     height: 100%;
+    justify-content: center;
     max-height: 100%;
 }
 
@@ -47,7 +54,6 @@ ft-picture figure {
     float: left;
     margin-left: 0px;
 }
-
 
 /* Figure title styles */
 .ft-picture .ft-picture-title {
@@ -77,6 +83,7 @@ ft-picture figure {
 .ft-picture:not(.ft-thumbnail) figcaption {
     background-color: white;
     border-bottom: 16px solid white;
+    padding-top: 0px;
 }
 
 /**

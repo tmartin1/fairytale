@@ -81,24 +81,6 @@
     text-align: center;
 }
 
-.slideshow-slide img {
-    /*display: flex;*/
-    margin: auto;
-    max-height: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-.slideshow-image.portrait {
-    height: 100%;
-    width: auto;
-}
-
-.slideshow-image.landscape {
-    height: auto;
-    width: 100%;
-}
-
 .slideshow-backdrop {
     position: fixed;
     top: 0;
