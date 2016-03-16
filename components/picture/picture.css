@@ -11,9 +11,6 @@ ft-picture figure {
     max-height: 100%;
     max-width: 100%;
 }
-.ft-picture-wrapper {
-    height: 100%;
-}
 .ft-picture {
     display: inline-block;
     max-height: 100%;

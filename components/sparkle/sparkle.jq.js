@@ -8,7 +8,7 @@ $(function () {
         // overlap allows sparkles to migrate... watch out for other dom elements though.
         $('.sparkle:last').sparkleh({
             color: 'rainbow',
-            count: 80,
+            count: 50,
             height: $(window).innerHeight(),
             width: $(window).innerWidth(),
             // overlapY: 0,
