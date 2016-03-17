@@ -93,6 +93,15 @@ a[role="button"] {
 .light-text {
     color: white;
 }
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;;
+}
+.text-right {
+    text-align: right;
+}
 .hidden {
     display: none;
 }
@@ -167,6 +176,18 @@ a[role="button"] {
     display: block;
     position: relative;
     padding: 12px;
+}
+.content-block h2 {
+    margin-top: 8px;
+}
+.list-section-title {
+    list-style: none;
+    margin-left: -40px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.list-section-title:first-of-type {
+    padding-top: 0px;
 }
 
 /*** Pictures ***/

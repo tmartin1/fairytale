@@ -15,6 +15,7 @@
             'fairytale.story',
             'fairytale.travel',
             'fairytale.weddingParty',
+            'fairytale.faq',
             'fairytale.styleSheet'
         ])
         .config(routerConfig)
@@ -72,6 +73,13 @@
                 controller: 'registryController',
                 controllerAs: 'vm',
                 data: { title: 'Gift Registry' }
+            })
+            .state('faq', {
+                url: '/faq',
+                templateUrl: './views/faq/faq.html',
+                controller: 'faqController',
+                controllerAs: 'vm',
+                data: { title: 'FAQs' }
             })
             .state('styleSheet', {
                 url: '/style-sheet',
