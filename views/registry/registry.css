@@ -11,10 +11,10 @@
 }
 .amazon-wedding-registry {
     position: absolute;
-    top: -425px;
+    top: -355px;
     left: -215px;
-    height: 1425px;
-    width: 1215px;
+    height: 1355px;
+    width: 1205px;
 }
 
 /* Registry iframe only displays on widths greater than 1020px */
