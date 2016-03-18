@@ -2,18 +2,18 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 body {
     background-color: #ebe5f5;
     color: #1d112e;
-    font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    /* Code below was for fancy font, which was deemed too hard to read */
+    /*font-family: nk_mono, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;*/
 }
-
 body.mobile {
     padding-top: 40px;
 }
-
 h1 {
     font-family: new_walt;
     font-size: 60px;
@@ -22,11 +22,9 @@ h1 {
 body.mobile h1 {
     font-size: 70px;
 }
-
 h1 small {
     color: #1d112e;
 }
-
 h2 {
     font-family: new_walt;
     font-size: 40px;
@@ -35,15 +33,12 @@ h2 {
 body.mobile h2 {
     font-size: 50px;
 }
-
 h3 {
     font-size: 24px;
 }
-
 button {
     font-size: inherit;
 }
-
 a[role="button"] {
     cursor: pointer;
 }
@@ -68,9 +63,6 @@ a[role="button"] {
     border-color: #57348b;
     outline: none;
 }
-
-
-/*** BOOTSTRAP CLASS OVERRIDES ***/
 
 
 /*** General Classes ***/

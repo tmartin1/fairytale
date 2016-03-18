@@ -18,6 +18,7 @@
 }
 
 /* Registry iframe only displays on widths greater than 1020px */
+/* TODO: Add logic to scale the iframe for smaller screen sizes */
 @media (max-width: 1020px) {
     .amazon-wedding-registry-content-block {
         display: none;
