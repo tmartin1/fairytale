@@ -2,6 +2,7 @@ var path = require('path');
 var express = require('express');
 
 var app = express();
+
 var host = process.env.HOST || '0.0.0.0';
 var port = process.env.PORT || 3000;
 

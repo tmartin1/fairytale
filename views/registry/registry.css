@@ -1,0 +1,25 @@
+.amazon-wedding-registry-content-block {
+    /**/
+}
+.amazon-wedding-registry-wrapper {
+    position: relative;
+    display: block;
+    height: 100%;
+    min-height: 1000px;
+    width: 1000px;
+    overflow: hidden;
+}
+.amazon-wedding-registry {
+    position: absolute;
+    top: -425px;
+    left: -215px;
+    height: 1425px;
+    width: 1215px;
+}
+
+/* Registry iframe only displays on widths greater than 1020px */
+@media (max-width: 1020px) {
+    .amazon-wedding-registry-content-block {
+        display: none;
+    }
+}
