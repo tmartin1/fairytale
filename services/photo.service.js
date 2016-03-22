@@ -148,8 +148,10 @@
             var modalInstance = $uibModal.open({
                 animation: false,
                 template: ['<div class="zoomedPic">',
+                    '<center class="slideshow-slide" >',
                     '<ft-picture picture="$ctrl.pic" zoom="false" position="center">',
                     '</ft-picture>',
+                    '</center>',
                     '</div>'].join(),
                 controller: function () {
                     this.pic = pic;

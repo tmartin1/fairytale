@@ -90,13 +90,16 @@ ft-picture figure {
 }
 .zoomedPic {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 24px;
     height: 100%;
     width: 100%;
+}
+.zoomedPic .slideshow-slide {
+    padding: 24px;
 }
 .zoomedPic img {
     max-width: 100%;

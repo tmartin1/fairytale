@@ -3,7 +3,7 @@
     data-ng-click="$ctrl.zoomIn($ctrl.picture)">
     <!-- <center class="ft-picture-title">{{ $ctrl.picture.title }}</center> -->
     <img data-ng-src="./assets/pics-of-us/{{ $ctrl.picture.src }}.jpg" alt="" />
-    <figcaption data-ng-if="$ctrl.picture.date">
+    <figcaption data-ng-if="$ctrl.picture.date" class="fancy-font" style="font-size: 18px;">
         {{ $ctrl.picture.date | date: "longDate" }}
     </figcaption>
 </figure>
