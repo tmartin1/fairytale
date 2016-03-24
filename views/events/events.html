@@ -6,16 +6,28 @@
         <p>{{ event.time }} {{ event.date }}</p>
         <p>{{ event.address.street }}</p>
         <p>{{ event.address.city }}, {{ event.address.state }} {{ event.address.zip }}</p>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=30&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=93jm4f1lahfjlloe3qovq8i2jo%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York"
+            data-ng-if="$first"
+            class="google-calendar-button"
+            frameborder="0"
+            scrolling="no">
+        </iframe>
     </div>
     <img src="./assets/images/minted_accent_break.png" alt="It's a cute line break." />
 </div>
 
-<iframe class="google-maps-block" src="https://mapsengine.google.com/map/embed?mid=zS-bmhXF4Uzc.kztJTTNGdiAc" ></iframe>
+
+<div class="fancy-font wedding-event content-block" style="padding: 16px; font-size: 18px;">
+    <i>Formal attire requested: Suites/tuxes for men, full length dresses/gowns for women.</i>
+</div>
+
+<!-- Embeded Google Map with event locations -->
+<iframe class="google-maps-block" src="https://mapsengine.google.com/map/embed?mid=zS-bmhXF4Uzc.kztJTTNGdiAc"></iframe>
 
 <!-- This is the embeded Google Calendar for the ceremony and reception -->
 <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=93jm4f1lahfjlloe3qovq8i2jo%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York&dates=20160625%2F20160625" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe> -->
 
-<div class="footnote">
+<div class="content-block footnote">
     * If you're staying at one of the featured Disney hotels, transportations to and from all
     wedding events will be taken care of.
 </div>
