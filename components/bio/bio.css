@@ -15,6 +15,22 @@
     margin: 16px 25px;
 }
 
+.person-block .left-pic {
+    width: 90%;
+    max-width: 350px;
+    border: solid white 10px;
+    float: left;
+    margin: 16px 25px;
+}
+
+.person-block .right-pic {
+    width: 90%;
+    max-width: 350px;
+    border: solid white 10px;
+    float: right;
+    margin: 16px 25px;
+}
+
 .person-block .bio {
     min-height: 400px;
     padding: 16px;

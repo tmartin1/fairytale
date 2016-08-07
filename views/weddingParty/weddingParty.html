@@ -13,4 +13,28 @@
             <ft-bio person="vm.groomsmen[$index]" border="'top'" customclass="$first ? 'dynamic-border' : ' '"></ft-bio>
         </div>
     </div>
+
+    <!-- Officiant and Master of Ceremony-->
+    <div class="row" data-ng-repeat="person in vm.ceremony">
+        <center>
+            <img src="./assets/images/minted_accent_break.png" alt="It's a cute line break." />
+        </center>
+        <div class="content-block person-block">
+            <center class="name">
+                <h2>{{ person.name }}</h2>
+                <h3>{{ person.title }}</h3>
+            </center>
+
+            <div class="picAndBio" style="min-height: 400px;">
+                <!-- Pic with Ana (on left) -->
+                <img class="left-pic" data-ng-src="./views/weddingParty/pics/{{ person.asset }}_ana.jpg" alt="It's an awesome picture of {{ person.name }}!" />
+
+                <!-- Pic with Tim (on right) -->
+                <img class="right-pic" data-ng-src="./views/weddingParty/pics/{{ person.asset }}_tim.jpg" alt="It's an awesome picture of {{ person.name }}!" />
+
+                <!-- Bio -->
+                <div class="bio" data-ng-include="'./views/weddingParty/bios/' + person.asset + '.txt'"></div>
+            </div>
+        </div>
+    </div>
 </div>

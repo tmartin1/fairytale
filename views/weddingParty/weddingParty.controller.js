@@ -51,7 +51,7 @@
             asset: 'christophe'
         }, {
             name: 'Elliott Thoreby',
-            title: 'Groomsman • Pioneer • Brewmaster • Jedi',
+            title: 'Groomsman • Pioneer • Brewmaster • Jedi Knight',
             asset: 'elliott'
         }, {
             name: 'Josh Powell',
@@ -66,6 +66,16 @@
             title: 'Groomsman • Brother to Be • Master of the Arts • AMF',
             asset: 'dalrek'
         }];
+
+        vm.ceremony = [{
+            name: 'Reverend Benjamin Burrows',
+            title: 'Officiant • Partner in Crime • Les Stroud',
+            asset: 'ben'
+        }, {
+            name: 'Takao Yamada',
+            title: 'Master of Ceremony • Usher • Guardian Angel',
+            asset: 'takao'
+        }]
     }
 
 })();
