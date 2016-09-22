@@ -67,13 +67,13 @@
                 controllerAs: 'vm',
                 data: { title: 'Pictures' }
             })
-            .state('registry', {
-                url: '/registry',
-                templateUrl: './views/registry/registry.html',
-                controller: 'registryController',
-                controllerAs: 'vm',
-                data: { title: 'Gift Registry' }
-            })
+            // .state('registry', {
+            //     url: '/registry',
+            //     templateUrl: './views/registry/registry.html',
+            //     controller: 'registryController',
+            //     controllerAs: 'vm',
+            //     data: { title: 'Gift Registry' }
+            // })
             .state('faq', {
                 url: '/faq',
                 templateUrl: './views/faq/faq.html',

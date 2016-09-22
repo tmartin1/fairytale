@@ -7,7 +7,7 @@
     font-size: inherit;
 }
 .wedding-event.content-block:first-of-type {
-    border-radius: 16px 16px 0px 16px;
+    border-radius: 16px;
 }
 .wedding-event p {
     font-size: 18px;
